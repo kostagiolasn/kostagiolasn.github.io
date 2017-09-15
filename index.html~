@@ -180,10 +180,13 @@
     <div id="profile">
 
       
-
+<<<<<<< HEAD
+      <div class="portrait" style="background-image: url('https://kostagiolasn.github.ioimg/portrait.jpg');"></div>
+      <meta itemprop="image" content="https://kostagiolasn.github.ioimg/portrait.jpg">
+=======
       <div class="portrait" style="background-image: url('https://kostagiolasn.github.io/img/portrait.jpg');"></div>
       <meta itemprop="image" content="https://kostagiolasn.github.io/img/portrait.jpg">
-
+>>>>>>> e81769c927ae047f4733780ad8237074b433f53f
       
 
       <div class="portrait-title">
