@@ -33,17 +33,17 @@
 
   
 
-  <link rel="alternate" href="https://kostagiolasn.github.io/tags/deep-learning/index.xml" type="application/rss+xml" title="Nikos S. Kostagiolas">
-  <link rel="feed" href="https://kostagiolasn.github.io/tags/deep-learning/index.xml" type="application/rss+xml" title="Nikos S. Kostagiolas">
+  <link rel="alternate" href="https://kostagiolasn.github.io/index.xml" type="application/rss+xml" title="Nikos S. Kostagiolas">
+  <link rel="feed" href="https://kostagiolasn.github.io/index.xml" type="application/rss+xml" title="Nikos S. Kostagiolas">
 
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="https://kostagiolasn.github.io/tags/deep-learning/">
+  <link rel="canonical" href="https://kostagiolasn.github.io/post/capsules/">
 
   
 
-  <title>Deep Learning | Nikos S. Kostagiolas</title>
+  <title>A new inspiring theory about learning: capsules | Nikos S. Kostagiolas</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -162,49 +162,124 @@
 </nav>
 
 
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
 
 
+  <div class="article-container">
+    <h1 itemprop="name">A new inspiring theory about learning: capsules</h1>
+    
 
-<div class="universal-wrapper">
+<div class="article-metadata">
 
-  <h1>Deep Learning</h1>
+  <span class="article-date">
+    
+    <time datetime="2017-09-15 00:00:00 &#43;0300 EEST" itemprop="datePublished">
+      Sep 15, 2017
+    </time>
+  </span>
 
   
 
   
   
-  <div>
-    <h2><a href="https://kostagiolasn.github.io/post/capsules/">A new inspiring theory about learning: capsules</a></h2>
-    <div class="article-style">
-      
-      Personal notes and thoughts of the discussion on capsules between Hinton and Ng.
-      
-    </div>
-  </div>
   
-  <div>
-    <h2><a href="https://kostagiolasn.github.io/project/deep-learning/">Multi-modal Signal Analysis for Human Activity Recognition using Deep Architectures.</a></h2>
-    <div class="article-style">
-      
-      Supervisor: Dr. Evangelia Zacharaki
-      
-    </div>
-  </div>
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/deep-learning">deep learning</a
+    >, 
+    
+    <a href="/tags/capsules">capsules</a
+    >
+    
+  </span>
   
-  <div>
-    <h2><a href="https://kostagiolasn.github.io/project/soundscape/">Soundscape Quality Estimation in Urban Spaces</a></h2>
-    <div class="article-style">
-      
-      Supervisor: Dr. Theodoros Giannakopoulos
-      
-    </div>
-  </div>
   
 
   
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fkostagiolasn.github.io%2fpost%2fcapsules%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=A%20new%20inspiring%20theory%20about%20learning%3a%20capsules&amp;url=https%3a%2f%2fkostagiolasn.github.io%2fpost%2fcapsules%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fkostagiolasn.github.io%2fpost%2fcapsules%2f&amp;title=A%20new%20inspiring%20theory%20about%20learning%3a%20capsules"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fkostagiolasn.github.io%2fpost%2fcapsules%2f&amp;title=A%20new%20inspiring%20theory%20about%20learning%3a%20capsules"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=A%20new%20inspiring%20theory%20about%20learning%3a%20capsules&amp;body=https%3a%2f%2fkostagiolasn.github.io%2fpost%2fcapsules%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
 
+
+  
 
 </div>
+
+    <div class="article-style" itemprop="articleBody">
+      <p>After viewing the discussion between G. Hinton and A. Ng at the end of the first week&rsquo;s lesson of the Coursera Deep Learning Specialization I became truly excited about the ideas behind <strong>capsules</strong>, a new deep learning architecture proposed by Prof. G. Hinton.</p>
+
+<p>Apparently, a capsule is a modality-specific part of a neural network which is used to represent a signle instance of a feature and all its different properties, this allowing the neural network to partition its representations among its different capsules (i.e. subsets of neurons) and, this, generalize better. Each capsule specializes in its own modality and gets enabled if and only if a particular feature is present at the input data.</p>
+
+<p>Hence, a neural net based on the capsule architecture will not require a whole layer to be specialized in just one aspect of the data it is provided with, but instead it will involve little groups of neurons (i.e. capsules) to form their own low-level representations and then, by combining knowledge of two or more groups, it will decide about how higher representations will be formed. So, for detecting higher-level features at the top capsules, it is essential for the lower-level capsules leading to these capsules above to form the criteria for this particular detection.</p>
+
+<p>Suppose, for example, that we have a pair of capsules specializing at detecting the presence of a mouth and that of a nose in a picture, respectively. Then, each one of these capsules needs to vote for what the parameters should be for a face, a voting which would conclude to an agreement should the spatial relationship between the mouth and the nose proves right.</p>
+
+<p>Therefore, when two or more capsules of the same level come to an agreement about a capsule of the next level, he decision will most probably be true, due to the heavily increasing error rate as the dimensions are getting higher and higher. This is called <em>routing by agreement</em>.
+Prof. Hinton summarized the talk by stating his firm belief that this learning structure could possibly provide more sample-efficient learning, when limited training data is available.</p>
+
+    </div>
+  </div>
+
+</article>
+
+
+
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+
+    
+  </ul>
+</nav>
+
+</div>
+
+<div class="article-container">
+  
+
+</div>
+
 <footer class="site-footer">
   <div class="container">
     <p class="powered-by">
@@ -249,6 +324,13 @@
       <script>hljs.initHighlightingOnLoad();</script>
     
 
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
     
     
 

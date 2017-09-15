@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Deep Learning on Nikos S. Kostagiolas</title>
-    <link>https://kostagiolasn.github.io/tags/deep-learning/</link>
-    <description>Recent content in Deep Learning on Nikos S. Kostagiolas</description>
+    <title>Capsules on Nikos S. Kostagiolas</title>
+    <link>https://kostagiolasn.github.io/tags/capsules/</link>
+    <description>Recent content in Capsules on Nikos S. Kostagiolas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Nikos Stefanos Kostagiolas</copyright>
     <lastBuildDate>Fri, 15 Sep 2017 00:00:00 +0300</lastBuildDate>
-    <atom:link href="/tags/deep-learning/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/capsules/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>A new inspiring theory about learning: capsules</title>
@@ -26,26 +26,6 @@
 
 &lt;p&gt;Therefore, when two or more capsules of the same level come to an agreement about a capsule of the next level, he decision will most probably be true, due to the heavily increasing error rate as the dimensions are getting higher and higher. This is called &lt;em&gt;routing by agreement&lt;/em&gt;.
 Prof. Hinton summarized the talk by stating his firm belief that this learning structure could possibly provide more sample-efficient learning, when limited training data is available.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Multi-modal Signal Analysis for Human Activity Recognition using Deep Architectures.</title>
-      <link>https://kostagiolasn.github.io/project/deep-learning/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://kostagiolasn.github.io/project/deep-learning/</guid>
-      <description>&lt;p&gt;&amp;ldquo;This research project examines the application of various Deep Learning architectures at Human Activity Recognition (HAR) using multi-sensor data gathered from three different health centers in France, Greece and Cyprus.&amp;rdquo;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Soundscape Quality Estimation in Urban Spaces</title>
-      <link>https://kostagiolasn.github.io/project/soundscape/</link>
-      <pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://kostagiolasn.github.io/project/soundscape/</guid>
-      <description>&lt;p&gt;&amp;ldquo;In this project we aim to train a global soundscape quality estimation system using a Convolutional Neural Networks (CNN) architecture. The experiments conducted focus on multi-label classification of urban recordings usign a human-annotated dataset.&amp;rdquo;&lt;/p&gt;
 </description>
     </item>
     
