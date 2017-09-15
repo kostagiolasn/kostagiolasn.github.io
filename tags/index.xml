@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Academic</title>
+    <title>Tags on Nikos S. Kostagiolas</title>
     <link>https://kostagiolasn.github.io/tags/</link>
-    <description>Recent content in Tags on Academic</description>
+    <description>Recent content in Tags on Nikos S. Kostagiolas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2016 Your Name</copyright>
+    <copyright>&amp;copy; 2017 Nikos Stefanos Kostagiolas</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/" rel="self" type="application/rss+xml" />
     
@@ -21,20 +21,20 @@
     </item>
     
     <item>
-      <title>Deep Learning</title>
-      <link>https://kostagiolasn.github.io/tags/deep-learning/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <title>Bioinformatics</title>
+      <link>https://kostagiolasn.github.io/tags/bioinformatics/</link>
+      <pubDate>Thu, 01 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://kostagiolasn.github.io/tags/deep-learning/</guid>
+      <guid>https://kostagiolasn.github.io/tags/bioinformatics/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Demo</title>
-      <link>https://kostagiolasn.github.io/tags/demo/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <title>Deep Learning</title>
+      <link>https://kostagiolasn.github.io/tags/deep-learning/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://kostagiolasn.github.io/tags/demo/</guid>
+      <guid>https://kostagiolasn.github.io/tags/deep-learning/</guid>
       <description></description>
     </item>
     

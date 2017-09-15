@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bioinformatics on Nikos S. Kostagiolas</title>
+    <link>https://kostagiolasn.github.io/tags/bioinformatics/</link>
+    <description>Recent content in Bioinformatics on Nikos S. Kostagiolas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Nikos Stefanos Kostagiolas</copyright>
+    <lastBuildDate>Thu, 01 Oct 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/bioinformatics/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Genomic Text Mining for Nucleosome Positioning Pattern Recognition using N-gram Graphs</title>
+      <link>https://kostagiolasn.github.io/project/genomics/</link>
+      <pubDate>Thu, 01 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kostagiolasn.github.io/project/genomics/</guid>
+      <description>&lt;p&gt;&amp;ldquo;This project has formed the basis around which my B.Sc. thesis is structured. It involves the comparison between several Machine Learning representations and classification algorithms on their ability to produce useful intuitions on how the underlying genomic sequence influences nucleosome positioning and, consequently, forms regulational constraints on gene expression.&amp;rdquo;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
