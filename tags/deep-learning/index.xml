@@ -35,7 +35,7 @@ Prof. Hinton summarized the talk by stating his firm belief that this learning s
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://kostagiolasn.github.io/project/deep-learning/</guid>
-      <description>&lt;p&gt;&amp;ldquo;This research project examines the application of various Deep Learning architectures at Human Activity Recognition (HAR) using multi-sensor data gathered from three different health centers in France, Greece and Cyprus.&amp;rdquo;&lt;/p&gt;
+      <description>&lt;p&gt;This research project examines the application of various Deep Learning architectures at Human Frailty Recognition (HAR) using multi-sensor data gathered from three different health centers in France, Greece and Cyprus.&lt;/p&gt;
 </description>
     </item>
     
@@ -45,7 +45,7 @@ Prof. Hinton summarized the talk by stating his firm belief that this learning s
       <pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate>
       
       <guid>https://kostagiolasn.github.io/project/soundscape/</guid>
-      <description>&lt;p&gt;&amp;ldquo;In this project we aim to train a global soundscape quality estimation system using a Convolutional Neural Networks (CNN) architecture. The experiments conducted focus on multi-label classification of urban recordings usign a human-annotated dataset.&amp;rdquo;&lt;/p&gt;
+      <description>&lt;p&gt;In this project we aim to train a global soundscape quality estimation system using a Convolutional Neural Networks (CNN) architecture. The experiments conducted focus on multi-label classification of urban recordings usign a human-annotated dataset.&lt;/p&gt;
 </description>
     </item>
     

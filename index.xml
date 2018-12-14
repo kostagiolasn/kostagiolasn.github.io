@@ -11,6 +11,26 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>LinkGeoML</title>
+      <link>https://kostagiolasn.github.io/project/linkgeoml/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kostagiolasn.github.io/project/linkgeoml/</guid>
+      <description>&lt;p&gt;This is the project I am assigned to at the Athena Center of Research and Innovation and involves the development of data analysis pipelines for geospatial and textual data.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Exploring different sequence representations and classification methods for the prediction of nucleosome positioning</title>
+      <link>https://kostagiolasn.github.io/publication/nucleosomes/</link>
+      <pubDate>Mon, 12 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kostagiolasn.github.io/publication/nucleosomes/</guid>
+      <description>&lt;p&gt;[//]: # More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>A new inspiring theory about learning: capsules</title>
       <link>https://kostagiolasn.github.io/post/capsules/</link>
       <pubDate>Fri, 15 Sep 2017 00:00:00 +0300</pubDate>
@@ -35,7 +55,7 @@ Prof. Hinton summarized the talk by stating his firm belief that this learning s
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://kostagiolasn.github.io/project/deep-learning/</guid>
-      <description>&lt;p&gt;&amp;ldquo;This research project examines the application of various Deep Learning architectures at Human Activity Recognition (HAR) using multi-sensor data gathered from three different health centers in France, Greece and Cyprus.&amp;rdquo;&lt;/p&gt;
+      <description>&lt;p&gt;This research project examines the application of various Deep Learning architectures at Human Frailty Recognition (HAR) using multi-sensor data gathered from three different health centers in France, Greece and Cyprus.&lt;/p&gt;
 </description>
     </item>
     
@@ -55,7 +75,7 @@ Prof. Hinton summarized the talk by stating his firm belief that this learning s
       <pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate>
       
       <guid>https://kostagiolasn.github.io/project/soundscape/</guid>
-      <description>&lt;p&gt;&amp;ldquo;In this project we aim to train a global soundscape quality estimation system using a Convolutional Neural Networks (CNN) architecture. The experiments conducted focus on multi-label classification of urban recordings usign a human-annotated dataset.&amp;rdquo;&lt;/p&gt;
+      <description>&lt;p&gt;In this project we aim to train a global soundscape quality estimation system using a Convolutional Neural Networks (CNN) architecture. The experiments conducted focus on multi-label classification of urban recordings usign a human-annotated dataset.&lt;/p&gt;
 </description>
     </item>
     
@@ -65,27 +85,27 @@ Prof. Hinton summarized the talk by stating his firm belief that this learning s
       <pubDate>Thu, 01 Oct 2015 00:00:00 +0000</pubDate>
       
       <guid>https://kostagiolasn.github.io/project/genomics/</guid>
-      <description>&lt;p&gt;&amp;ldquo;This project has formed the basis around which my B.Sc. thesis is structured. It involves the comparison between several Machine Learning representations and classification algorithms on their ability to produce useful intuitions on how the underlying genomic sequence influences nucleosome positioning and, consequently, forms regulational constraints on gene expression.&amp;rdquo;&lt;/p&gt;
+      <description>&lt;p&gt;This project has formed the basis around which my B.Sc. thesis is structured. It involves the comparison between several Machine Learning representations and classification algorithms on their ability to produce useful intuitions on how the underlying genomic sequence influences nucleosome positioning and, consequently, forms regulational constraints on gene expression.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>A Person Re-Identification System For Mobile Devices</title>
-      <link>https://kostagiolasn.github.io/publication/person-re-identification/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <title>Energy Trading &amp; Risk Management</title>
+      <link>https://kostagiolasn.github.io/project/deddhe/</link>
+      <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://kostagiolasn.github.io/publication/person-re-identification/</guid>
-      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+      <guid>https://kostagiolasn.github.io/project/deddhe/</guid>
+      <description>&lt;p&gt;I was involved with this project during my internship at IBM Hellas the purpose of which was to develop ETL dataflows and data analysis pipelines for our client, the Greek Department of Energy Management.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Mobile visual clothing search</title>
-      <link>https://kostagiolasn.github.io/publication/clothing-search/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      <title>SOLVENCY II</title>
+      <link>https://kostagiolasn.github.io/project/solvency/</link>
+      <pubDate>Sun, 01 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://kostagiolasn.github.io/publication/clothing-search/</guid>
-      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+      <guid>https://kostagiolasn.github.io/project/solvency/</guid>
+      <description>&lt;p&gt;I was involved with this project during my internship at IBM Hellas the purpose of which was to develop ETL dataflows for our client, “ETHNIKI” Hellenic General Insurance Company Group. SOLVENCY II was a crucial project the completion of which resulted in a report which included key figure and information of the Group&amp;rsquo;s business and performance, system of Governance, risk profile, valuation for solvency purposes, capital management and its future prospects.&lt;/p&gt;
 </description>
     </item>
     

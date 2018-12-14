@@ -7,8 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Nikos Stefanos Kostagiolas</copyright>
-    <lastBuildDate>Thu, 01 Oct 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Sep 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/bioinformatics/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>LinkGeoML</title>
+      <link>https://kostagiolasn.github.io/project/linkgeoml/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kostagiolasn.github.io/project/linkgeoml/</guid>
+      <description>&lt;p&gt;This is the project I am assigned to at the Athena Center of Research and Innovation and involves the development of data analysis pipelines for geospatial and textual data.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Genomic Text Mining for Nucleosome Positioning Pattern Recognition using N-gram Graphs</title>
@@ -16,7 +26,27 @@
       <pubDate>Thu, 01 Oct 2015 00:00:00 +0000</pubDate>
       
       <guid>https://kostagiolasn.github.io/project/genomics/</guid>
-      <description>&lt;p&gt;&amp;ldquo;This project has formed the basis around which my B.Sc. thesis is structured. It involves the comparison between several Machine Learning representations and classification algorithms on their ability to produce useful intuitions on how the underlying genomic sequence influences nucleosome positioning and, consequently, forms regulational constraints on gene expression.&amp;rdquo;&lt;/p&gt;
+      <description>&lt;p&gt;This project has formed the basis around which my B.Sc. thesis is structured. It involves the comparison between several Machine Learning representations and classification algorithms on their ability to produce useful intuitions on how the underlying genomic sequence influences nucleosome positioning and, consequently, forms regulational constraints on gene expression.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Energy Trading &amp; Risk Management</title>
+      <link>https://kostagiolasn.github.io/project/deddhe/</link>
+      <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kostagiolasn.github.io/project/deddhe/</guid>
+      <description>&lt;p&gt;I was involved with this project during my internship at IBM Hellas the purpose of which was to develop ETL dataflows and data analysis pipelines for our client, the Greek Department of Energy Management.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SOLVENCY II</title>
+      <link>https://kostagiolasn.github.io/project/solvency/</link>
+      <pubDate>Sun, 01 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kostagiolasn.github.io/project/solvency/</guid>
+      <description>&lt;p&gt;I was involved with this project during my internship at IBM Hellas the purpose of which was to develop ETL dataflows for our client, “ETHNIKI” Hellenic General Insurance Company Group. SOLVENCY II was a crucial project the completion of which resulted in a report which included key figure and information of the Group&amp;rsquo;s business and performance, system of Governance, risk profile, valuation for solvency purposes, capital management and its future prospects.&lt;/p&gt;
 </description>
     </item>
     
