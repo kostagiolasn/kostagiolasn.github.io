@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Etl on Nikos S. Kostagiolas</title>
+    <link>https://kostagiolasn.github.io/tags/etl/</link>
+    <description>Recent content in Etl on Nikos S. Kostagiolas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Nikos Stefanos Kostagiolas</copyright>
+    <lastBuildDate>Mon, 01 Jun 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/etl/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Energy Trading &amp; Risk Management</title>
+      <link>https://kostagiolasn.github.io/project/deddhe/</link>
+      <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kostagiolasn.github.io/project/deddhe/</guid>
+      <description>&lt;p&gt;I was involved with this project during my internship at IBM Hellas the purpose of which was to develop ETL dataflows and data analysis pipelines for our client, the Greek Department of Energy Management.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SOLVENCY II</title>
+      <link>https://kostagiolasn.github.io/project/solvency/</link>
+      <pubDate>Sun, 01 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kostagiolasn.github.io/project/solvency/</guid>
+      <description>&lt;p&gt;I was involved with this project during my internship at IBM Hellas the purpose of which was to develop ETL dataflows for our client, “ETHNIKI” Hellenic General Insurance Company Group. SOLVENCY II was a crucial project the completion of which resulted in a report which included key figure and information of the Group&amp;rsquo;s business and performance, system of Governance, risk profile, valuation for solvency purposes, capital management and its future prospects.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

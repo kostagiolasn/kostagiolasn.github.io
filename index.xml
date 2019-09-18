@@ -11,12 +11,42 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>LinkGeoML</title>
+      <title>LGM-PC: A tool for POI classification on QGIS</title>
+      <link>https://kostagiolasn.github.io/publication/nucleosomes-copy/</link>
+      <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kostagiolasn.github.io/publication/nucleosomes-copy/</guid>
+      <description>&lt;p&gt;[//]: # More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>LGM-Classification</title>
+      <link>https://kostagiolasn.github.io/project/lgm-geocoding/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kostagiolasn.github.io/project/lgm-geocoding/</guid>
+      <description>&lt;p&gt;LGM-Geocoding is a python library which implements a full Machine Learning workflow for training classification algorithms on annotated datasets that contain mappings between coordinate pairs and the ideal geocoding source for them and producing models for providing accurate predictions about ideal geocoding sources for previously unseen geocoding pairs.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>LGM-Classification</title>
+      <link>https://kostagiolasn.github.io/project/lgm-polygon/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kostagiolasn.github.io/project/lgm-polygon/</guid>
+      <description>&lt;p&gt;LGM-PolygonClassification is a python library that implements a full Machine Learning workflow for training classification algorithms on annotated datasets that contain pairs of matched polygons each one of which belongs to a distinct polygon variant.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>LGM-Classification</title>
       <link>https://kostagiolasn.github.io/project/linkgeoml/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://kostagiolasn.github.io/project/linkgeoml/</guid>
-      <description>&lt;p&gt;This is the project I am assigned to at the Athena Center of Research and Innovation and involves the development of data analysis pipelines for geospatial and textual data.&lt;/p&gt;
+      <description>&lt;p&gt;LGM-Classification is a python library implementing a full Machine Learning workflow for training classification algorithms on annotated POI datasets and producing models for the accurate classification of Points of Interest (POIs) into categories.&lt;/p&gt;
 </description>
     </item>
     
