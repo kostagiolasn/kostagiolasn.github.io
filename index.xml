@@ -22,6 +22,16 @@
     
     <item>
       <title>LGM-Classification</title>
+      <link>https://kostagiolasn.github.io/project/linkgeoml/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kostagiolasn.github.io/project/linkgeoml/</guid>
+      <description>&lt;p&gt;LGM-Classification is a python library implementing a full Machine Learning workflow for training classification algorithms on annotated POI datasets and producing models for the accurate classification of Points of Interest (POIs) into categories.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>LGM-Geocoding</title>
       <link>https://kostagiolasn.github.io/project/lgm-geocoding/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
@@ -31,22 +41,12 @@
     </item>
     
     <item>
-      <title>LGM-Classification</title>
+      <title>LGM-PolygonClassification</title>
       <link>https://kostagiolasn.github.io/project/lgm-polygon/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://kostagiolasn.github.io/project/lgm-polygon/</guid>
       <description>&lt;p&gt;LGM-PolygonClassification is a python library that implements a full Machine Learning workflow for training classification algorithms on annotated datasets that contain pairs of matched polygons each one of which belongs to a distinct polygon variant.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>LGM-Classification</title>
-      <link>https://kostagiolasn.github.io/project/linkgeoml/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://kostagiolasn.github.io/project/linkgeoml/</guid>
-      <description>&lt;p&gt;LGM-Classification is a python library implementing a full Machine Learning workflow for training classification algorithms on annotated POI datasets and producing models for the accurate classification of Points of Interest (POIs) into categories.&lt;/p&gt;
 </description>
     </item>
     
