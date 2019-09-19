@@ -6,7 +6,7 @@
     <description>Recent content in Nikos S. Kostagiolas on Nikos S. Kostagiolas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2017 Nikos Stefanos Kostagiolas</copyright>
+    <copyright>&amp;copy; 2017 Nikos Kostagiolas</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
@@ -61,6 +61,16 @@
     </item>
     
     <item>
+      <title>Learning optimization algorithms with neural networks</title>
+      <link>https://kostagiolasn.github.io/talk/example-talk/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kostagiolasn.github.io/talk/example-talk/</guid>
+      <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>A new inspiring theory about learning: capsules</title>
       <link>https://kostagiolasn.github.io/post/capsules/</link>
       <pubDate>Fri, 15 Sep 2017 00:00:00 +0300</pubDate>
@@ -86,16 +96,6 @@ Prof. Hinton summarized the talk by stating his firm belief that this learning s
       
       <guid>https://kostagiolasn.github.io/project/deep-learning/</guid>
       <description>&lt;p&gt;This research project examines the application of various Deep Learning architectures at Human Frailty Recognition (HAR) using multi-sensor data gathered from three different health centers in France, Greece and Cyprus.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Example Talk</title>
-      <link>https://kostagiolasn.github.io/talk/example-talk/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://kostagiolasn.github.io/talk/example-talk/</guid>
-      <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>
     
