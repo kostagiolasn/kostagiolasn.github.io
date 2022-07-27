@@ -1,0 +1,1760 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.1 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Nikos Kostagiolas">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Steps to develop an academic-theme website using R (No HTML, JavaScript, or CSS)">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/2021-01-26_personal_website/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.min.a57fad42af93a5dc835ea3406c71e7f8.css">
+
+  
+
+
+
+
+  
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="/post/2021-01-26_personal_website/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Nikos Kostagiolas">
+  <meta property="og:url" content="/post/2021-01-26_personal_website/">
+  <meta property="og:title" content="How I created my website | Nikos Kostagiolas">
+  <meta property="og:description" content="Steps to develop an academic-theme website using R (No HTML, JavaScript, or CSS)"><meta property="og:image" content="/post/2021-01-26_personal_website/featured.png">
+  <meta property="twitter:image" content="/post/2021-01-26_personal_website/featured.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2021-01-26T16:30:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2021-01-26T16:30:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/2021-01-26_personal_website/"
+  },
+  "headline": "How I created my website",
+  
+  "image": [
+    "/post/2021-01-26_personal_website/featured.png"
+  ],
+  
+  "datePublished": "2021-01-26T16:30:00Z",
+  "dateModified": "2021-01-26T16:30:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Nikos Kostagiolas"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nikos Kostagiolas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Steps to develop an academic-theme website using R (No HTML, JavaScript, or CSS)"
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>How I created my website | Nikos Kostagiolas</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Nikos Kostagiolas</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Nikos Kostagiolas</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>How I created my website</h1>
+
+  
+  <p class="page-subtitle">Steps to develop an academic-theme website using R (No HTML, JavaScript, or CSS)</p>
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span class="author-highlighted">
+      Nikos Kostagiolas</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jan 26, 2021
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    13 min read
+  </span>
+  
+
+  
+  
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/2021-01-26_personal_website/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/tutorial/">Tutorial</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>Whether one needs a personal website for professional growth is out of the question. Of course, we need it. Instead, the question is: <em>how attractive and elegant is the website?</em> Being a Ph.D. student, it&rsquo;s not a surprise that I find an academic-theme website very attractive. Developing such a website from the scratch needs huge time and effort. Luckily, there are open source templates such as <a href="https://themes.gohugo.io/" target="_blank" rel="noopener">Hugo templates</a>. Recently I created <a href="https://alorchhota.github.io/" target="_blank">my website</a> using such a template. Below is a blurred screenshot of the site.</p>
+<p><img src="/posts/website_preview.png" alt="A blurred screenshot of the site"></p>
+<p>What I like about the website are:</p>
+<ul>
+<li>It is simple in design, attractive in appearance, and elegant in presentation.</li>
+<li>Easy to customize if you know R.</li>
+<li>HTML, JavaScript, or CSS knowledge is NOT necessary.</li>
+<li>The code is maintained as a repository in Github. As a result, it&rsquo;s easy to edit or update the site.</li>
+<li>The site has been deployed in Github, no need to buy a domain name. It is also easy to deploy the site in a custom domain name.</li>
+<li>It offers a simple and powerful personal blogging feature.</li>
+<li>Seamlessly rendered in computers, cell-phones, iPads, and other devices.</li>
+</ul>
+<p>Though the <a href="https://themes.gohugo.io/academic/" target="_blank" rel="noopener">Hugo academic template</a> was fairly simple, first I had to figure out how to use it and then how to customize it. I started by looking into the blog posts by <a href="https://alison.rbind.io/post/2017-06-12-up-and-running-with-blogdown/" target="_blank" rel="noopener">Alison Hill</a>, <a href="https://lmyint.github.io/post/hugo-academic-tips/" target="_blank" rel="noopener">Leslie Myint</a>, and  <a href="https://divingintogeneticsandgenomics.rbind.io/post/hugo-academic-theme-blog-down-deployment-some-details/" target="_blank" rel="noopener">Ming Tang</a>. While each of these blogs was helpful, the actual development was slightly different because things have changed since their publications. Here I share how I used and personalized the template.</p>
+<p>I divide the website development into four steps.</p>
+<ol>
+<li><a href="#requirement">Requirement gathering</a></li>
+<li><a href="#template">Just running a template site</a></li>
+<li><a href="#personalize">Personalizing the site</a></li>
+<li><a href="#deploy">Hosting and deployment</a></li>
+</ol>
+<h2 id="requirement">Step-1: Requirement gathering</h2>
+<ul>
+<li>I have <a href="https://www.r-project.org/" target="_blank" rel="noopener">R</a> and <a href="https://rstudio.com/" target="_blank" rel="noopener">RStudio</a> installed on my computer. Working knowledge of R coding is necessary.</li>
+<li>Installed <a href="https://cran.r-project.org/web/packages/blogdown/index.html" target="_blank" rel="noopener">blogdown</a> package in R. The book <a href="https://bookdown.org/yihui/blogdown/" target="_blank" rel="noopener">blogdown: Creating Websites with R Markdown</a> is a good resource to know the basics related to this website development.</li>
+<li>Installed <a href="https://golang.org" target="_blank" rel="noopener">GO language</a> on the computer.</li>
+<li>I have a <a href="https://github.com/" target="_blank" rel="noopener">Github</a> account. Working knowledge of Github is necessary.</li>
+</ul>
+<h2 id="template">Step-2: Just running a template site</h2>
+<ol>
+<li>
+<p>I <a href="https://docs.github.com/en/github/getting-started-with-github/fork-a-repo" target="_blank" rel="noopener">forked</a> the <a href="https://github.com/wowchemy/starter-academic" target="_blank" rel="noopener">starter-academic</a> repository on my Github account. Alternatively, one can create a repository using <a href="https://docs.github.com/en/github/getting-started-with-github/fork-a-repo" target="_blank" rel="noopener">starter-academic</a> as <a href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template" target="_blank" rel="noopener">a template</a>.</p>
+</li>
+<li>
+<p><a href="https://docs.github.com/en/github/administering-a-repository/renaming-a-repository" target="_blank" rel="noopener">Renamed</a> the repository to <em>alorchhota.github.io</em> from Settings. Please note the name format here: <strong>[myaccountid].github.io</strong>. This name format would be useful later to deploy the website. <a href="https://github.com/alorchhota/alorchhota.github.io" target="_blank" rel="noopener">Here</a> is my repository &ndash; you may take a look if you like.</p>
+</li>
+<li>
+<p>Cloned the repository on my local computer using Terminal.</p>
+<pre><code class="language-{bash}">git clone https://github.com/alorchhota/alorchhota.github.io # remember to use your repository
+</code></pre>
+</li>
+<li>
+<p>Opened the repository in RStudio as a new package (from an existing directory). There I loaded the blogdown package and installed Hugo.</p>
+<pre><code class="language-{r}">library(blogdown)
+blogdown::install_hugo()
+</code></pre>
+</li>
+<li>
+<p>Restarted RStudio &ndash; required for loading the updated <code>$PATH</code> variable.</p>
+</li>
+<li>
+<p>In Rstudio, I built the template website, and start the server.</p>
+<pre><code class="language-{r}">library(blogdown)
+build_site()
+# hugo: downloading modules â€¦
+# hugo: collected modules in 15019 ms
+# Start building sites â€¦ 
+# 
+#                    | EN  
+# -------------------+-----
+#   Pages            | 52  
+#   Paginator pages  |  0  
+#   Non-page files   |  7  
+#   Static files     |  3  
+#   Processed images | 39  
+#   Aliases          | 12  
+#   Sitemaps         |  1  
+#   Cleaned          |  0  
+# 
+# Total in 26388 ms
+serve_site()
+# Launching the server via the command:
+#   C:/Users/Shatil/AppData/Roaming/Hugo/0.80.0/hugo.exe server --bind 127.0.0.1 -p 4321 --themesDir themes -D -F --navigateToChanged
+# Serving the directory . at http://localhost:4321
+# Launched the hugo server in the background (process ID: 9296). To stop it, call blogdown::stop_server() or restart the R session.
+</code></pre>
+<p>At this point, the template website was visible in the RStudio <em>Viewer</em> panel (see the image below).
+<img src="/posts/rstudio_website.png" alt="Sample website view in RStudio"></p>
+<p>When I clicked on the button as marked by a red circle, the website opened in a web browser. Generally, the website updated updated each time I saved any change. Occasionally, I needed to stop the site by calling <code>stop_server()</code>, and then restart by calling <code>build_site()</code> and <code>serve_site()</code> manually.</p>
+</li>
+</ol>
+<h2 id="personalize">Step-3: Personalizing the site</h2>
+<p>The variables in the template repository are pretty self-explanatory and need no explanation. So, instead of describing every variable change, here I mention only the notable changes. You are welcome to visit <a href="https://github.com/alorchhota/alorchhota.github.io" target="_blank" rel="noopener">my repository</a> to see all changes.</p>
+<ol>
+<li>
+<p>Updated the title and copyright in the file: <code>config/_default/config.toml</code> keeping everything else unchanged.</p>
+<pre><code class="language-toml"># Title of your site
+title = &quot;Ashis Saha&quot;
+
+# The URL of your site.
+# End your URL with a `/` trailing slash, e.g. `https://example.com/`.
+baseurl = &quot;&quot;
+
+# Enter a copyright notice to display in the site footer.
+# To display a copyright symbol, type `&amp;copy;`. For current year, type `{year}`.
+copyright = &quot;© 2020 Ashis Saha&quot;
+</code></pre>
+</li>
+<li>
+<p>Deleted the demo file: <code>content/home/demo.md</code>.</p>
+</li>
+<li>
+<p>Updated <code>content/authors/admin/_index.md</code> with personal information. Notably, I updated my name, changed the google-scholar icon, and added about-me. I also set <em>highlight_name: true</em> to highlight my names in publication-author lists.</p>
+<pre><code class="language-{r}">---
+# Display name
+title: Ashis Saha
+
+# ...
+
+social:
+- icon: google-scholar
+  icon_pack: ai
+  link: https://scholar.google.co.uk/citations?user=e6Ku7IIAAAAJ
+
+# ...
+
+# Highlight the author in author lists? (true/false)
+highlight_name: true
+---
+
+I am a Ph.D. student advised by  ...
+</code></pre>
+</li>
+<li>
+<p>Replaced the <code>content/authors/admin/avatar.jpg</code> file with my profile picture.</p>
+</li>
+<li>
+<p>Copied my CV (<em>Ashis_Saha_CV.pdf</em>) in <code>static/media/</code> folder and updated <code>content/authors/admin/_index.md</code> file to include the CV.</p>
+<pre><code class="language-r"># Link to a PDF of your resume/CV.
+# To use: copy your resume to `static/media/resume.pdf`, enable `ai` icons in `params.toml`, 
+# and uncomment the lines below.
+- icon: cv
+  icon_pack: ai
+  link: media/Ashis_Saha_CV.pdf
+</code></pre>
+</li>
+<li>
+<p>Deleted a few files from <code>content/home</code> folder: <code>skills.md</code>, <code>accomplishments.md</code>, and <code>tags.md</code>. You may keep them if you like.</p>
+</li>
+<li>
+<p>Updated <code>content/home/experience.md</code>.</p>
+</li>
+<li>
+<p>Commented out <code>content:</code> and <code>design:</code> in <code>content/home/contact.md</code>.</p>
+<pre><code class="language-r"># content:
+#   # Automatically link email and phone or display as text?
+#   autolink: true
+#   
+#   # Email form provider
+#   form:
+#     provider: netlify
+#     formspree:
+#       id:
+#     netlify:
+#       # Enable CAPTCHA challenge to reduce spam?
+#       captcha: false
+#   
+# design:
+#   columns: '2'
+</code></pre>
+</li>
+<li>
+<p>Updated email, phone number and address in <code>config/_default/params.toml</code>. Also commented out a few social links which are already available below the profile picture.</p>
+<pre><code class="language-r"># Enter contact details (optional). To hide a field, clear it to &quot;&quot;.
+email = &quot;****@***.com&quot;
+phone = &quot;+1-***-***-****&quot;
+
+# Address
+# For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
+address = {street = &quot;*** St, Apt ***&quot;, city = &quot;***&quot;, region = &quot;MD&quot;, postcode = &quot;*****&quot;, country = &quot;United States&quot;, country_code = &quot;US&quot;}
+
+# Geographic coordinates
+# To get your coordinates, right-click on Google Maps and choose &quot;What's here?&quot;. The coords will show up at the bottom.
+# coordinates = {latitude = &quot;37.4275&quot;, longitude = &quot;-122.1697&quot;}
+
+# Directions for visitors to locate you.
+# directions = &quot;Enter Building 1 and take the stairs to Office 200 on Floor 2&quot;
+
+# Office hours
+# A list of your office hours. To remove, set to an empty list `[]`.
+# office_hours = [&quot;Monday 10:00 to 13:00&quot;, &quot;Wednesday 09:00 to 10:00&quot;]
+
+# Enter an optional link for booking appointments (e.g. calendly.com).
+# appointment_url = &quot;https://calendly.com&quot;
+
+# Contact links
+#   Set to `[]` to disable, or comment out unwanted lines with a hash `#`.
+#contact_links = [
+#  {icon = &quot;twitter&quot;, icon_pack = &quot;fab&quot;, name = &quot;DM Me&quot;, link = &quot;https://twitter.com/Twitter&quot;},
+#  {icon = &quot;skype&quot;, icon_pack = &quot;fab&quot;, name = &quot;Skype Me&quot;, link = &quot;skype:echo123?call&quot;},
+#  {icon = &quot;keybase&quot;, icon_pack = &quot;fab&quot;, name = &quot;Chat on Keybase&quot;, link = &quot;https://keybase.io/&quot;},
+#  {icon = &quot;comments&quot;, icon_pack = &quot;fas&quot;, name = &quot;Discuss on Forum&quot;, link = &quot;https://discourse.gohugo.io&quot;},
+#  # {icon = &quot;telegram&quot;, icon_pack = &quot;fab&quot;, name = &quot;Telegram Me&quot;, link = &quot;https://telegram.me/@Telegram&quot;},
+#  ]
+</code></pre>
+</li>
+<li>
+<p>Reordered the menu items by changing the weight values in <code>config/_default/menus.toml</code>. Smaller weights appear leftward.</p>
+<pre><code class="language-toml">[[main]]
+  name = &quot;Home&quot;
+  url = &quot;#about&quot;
+  weight = 10
+
+[[main]]
+  name = &quot;Experience&quot;
+  url = &quot;#experience&quot;
+  weight = 20
+
+[[main]]
+  name = &quot;Publications&quot;
+  url = &quot;#featured&quot;
+  weight = 30
+
+# ...
+</code></pre>
+</li>
+<li>
+<p>Right-aligned the menu items using <code>align</code> parameter of <code>main_menu</code> in <code>config/_default/params.toml</code>.</p>
+<pre><code class="language-toml">############################
+## Advanced
+############################
+
+# Main menu alignment (l = left, c = center, r = right) and logo options.
+main_menu = {align = &quot;r&quot;, show_logo = true, highlight_active_link = true, show_language = false, show_day_night = true, show_search = true}
+</code></pre>
+</li>
+<li>
+<p>Reordered the sections by setting appropriate weight values in <code>*.md</code> files in <code>contect/home/</code> folder. Smaller weights appear at the top. An example in <code>content/home/publications.md</code> file is shown below.</p>
+<pre><code class="language-r"># Order that this section appears on the page.
+weight: 50
+
+title: Recent Publications
+subtitle: ''
+</code></pre>
+</li>
+<li>
+<p>For each publication, I duplicated the existing <code>example</code> folder in <code>content/publication/</code>. In each folder, I kept only one file (<code>index.md</code>) and edited it. I ensured using <code>admin</code> as my name to highlight my name in the author list. For manuscripts, posters, or slides, I created sub-folders in <code>static</code>, copied necessary files there, and used their links in <code>url_pdf</code>, <code>url_poster</code>, or <code>url_slides</code> variables, respectively. An example <code>index.md</code> file is shown below.</p>
+<pre><code class="language-r">---
+title: &quot;Co-expression networks reveal the tissue-specific regulation of transcription and splicing&quot;
+
+# Authors
+# If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
+# and it will be replaced with their full name and linked to their profile.
+authors:
+- admin
+- Yungil Kim
+- Ariel D.H. Gewirtz
+- Brian Jo
+- Chuan Gao
+- Ian C. McDowell
+- The GTEx Consortium
+- Barbara E. Engelhardt
+- Alexis Battle
+
+date: &quot;2017-10-11T00:00:00Z&quot;
+doi: &quot;&quot;
+
+# Schedule page publish date (NOT publication's date).
+publishDate: &quot;2017-01-01T00:00:00Z&quot;
+
+# Publication type.
+# Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
+# 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
+# 7 = Thesis; 8 = Patent
+publication_types: [&quot;2&quot;]
+
+# Publication name and optional abbreviated publication name.
+publication: In *Genome Research*
+publication_short: In *Genome Research*
+
+abstract: Gene co-expression networks capture biologically important patterns in gene expression data, enabling functional analyses of genes, discovery of biomarkers, and interpretation of genetic variants. Most network analyses to date have been limited to assessing correlation between total gene expression levels in a single tissue or small sets of tissues. Here, we built networks that additionally capture the regulation of relative isoform abundance and splicing, along with tissue-specific connections unique to each of a diverse set of tissues. We used the Genotype-Tissue Expression (GTEx) project v6 RNA sequencing data across 50 tissues and 449 individuals. First, we developed a framework called Transcriptome-Wide Networks (TWNs) for combining total expression and relative isoform levels into a single sparse network, capturing the interplay between the regulation of splicing and transcription. We built TWNs for 16 tissues and found that hubs in these networks were strongly enriched for splicing and RNA binding genes, demonstrating their utility in unraveling regulation of splicing in the human transcriptome. Next, we used a Bayesian biclustering model that identifies network edges unique to a single tissue to reconstruct Tissue-Specific Networks (TSNs) for 26 distinct tissues and 10 groups of related tissues. Finally, we found genetic variants associated with pairs of adjacent nodes in our networks, supporting the estimated network structures and identifying 20 genetic variants with distant regulatory impact on transcription and splicing. Our networks provide an improved understanding of the complex relationships of the human transcriptome across tissues. 
+
+# # Summary. An optional shortened abstract.
+# summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+
+tags: []
+
+# Display this page in the Featured widget?
+featured: true
+
+# Custom links (uncomment lines below)
+# links:
+# - name: Custom Link
+#   url: http://example.org
+
+url_pdf: 'paper/twn.pdf'
+url_code: 'https://github.com/battle-lab/twn_tsn'
+url_dataset: 'https://gtexportal.org/home/datasets#filesetFilesDiv76'
+url_poster: ''
+url_project: ''
+url_slides: ''
+url_source: ''
+url_video: ''
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder. 
+# image:
+#   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+#   focal_point: &quot;&quot;
+#   preview_only: false
+
+# Associated Projects (optional).
+#   Associate this publication with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `internal-project` references `content/project/internal-project/index.md`.
+#   Otherwise, set `projects: []`.
+# projects:
+# - example
+
+# Slides (optional).
+#   Associate this publication with Markdown slides.
+#   Simply enter your slide deck's filename without extension.
+#   E.g. `slides: &quot;example&quot;` references `content/slides/example/index.md`.
+#   Otherwise, set `slides: &quot;&quot;`.
+# slides: crossmap
+---
+</code></pre>
+</li>
+<li>
+<p>Changed <code>view</code> in <code>content/publication/_index.md</code>.</p>
+<pre><code class="language-r"># View.
+#   1 = List
+#   2 = Compact
+#   3 = Card
+#   4 = Citation
+view: 4
+</code></pre>
+</li>
+<li>
+<p>Changed <code>view</code> in <code>content/home/featured.md</code>.</p>
+<pre><code class="language-r">design:
+  # Choose a view for the listings:
+  #   1 = List
+  #   2 = Compact
+  #   3 = Card
+  #   4 = Citation (publication only)
+  view: 4
+</code></pre>
+</li>
+<li>
+<p>To add one more menu item (Extracurricular), first added a menu entry in <code>config/_default/menus.toml</code> with a url and a weight to determine the order.</p>
+<pre><code class="language-toml">[[main]]
+  name = &quot;Extracurricular&quot;
+  url = &quot;#extracurricular&quot;
+  weight = 55
+</code></pre>
+<p>Then, I added the file <code>extracurricular.md</code> file in <code>contect/home/</code> with necessary contents in R mark down format.</p>
+<pre><code class="language-r">---
+widget: blank
+headless: true
+
+# This file represents a page section.
+headless: true
+
+# Order that this section appears on the page.
+weight: 120
+
+title: Extracuricular Activities
+subtitle: ''
+
+design:
+  # Choose how many columns the section has. Valid values: 1 or 2.
+  columns: '2'
+---
+
+### Badhan (a voluntary  blood donors' organization)
+...
+</code></pre>
+</li>
+<li>
+<p>To create a blog post, I duplicated the existing <code>getting-started</code> folder in <code>content/post</code>, replaced  <code>feature.jpg</code> with a preview image, and edited <code>index.md</code> inside the folder.</p>
+<pre><code>---
+title: How I created my website
+subtitle: Steps to build and deploy an academic-theme website.
+
+# Summary for listings and search engines
+summary: Steps to build and deploy an academic-theme website.
+
+# Link this post with a project
+projects: []
+
+# Date published
+date: &quot;2021-01-26T11:00:00Z&quot;
+
+# Date updated
+lastmod: &quot;2021-01-26T11:00:00Z&quot;
+
+# Is this an unpublished draft?
+draft: false
+
+# Show this page in the Featured widget?
+featured: false
+
+# Featured image
+# Place an image named `featured.jpg/png` in this page's folder and customize its options here.
+image:
+  caption: 'Blurred screenshot of the website'
+  focal_point: &quot;&quot;
+  placement: 2
+  preview_only: true
+
+authors:
+- admin
+
+tags:
+- Academic
+- Website
+- How to
+
+categories:
+- Tutorial
+
+---
+Whether one needs a personal website ...
+</code></pre>
+<p>Note: if <code>draft: true</code>, the post will be shown only locally, but not publicly.</p>
+</li>
+<li>
+<p>To facilitate readers&rsquo; comments, I first signed up in <a href="https://disqus.com" target="_blank" rel="noopener">Disqus</a>, <a href="https://help.disqus.com/en/articles/1717111-what-s-a-shortname" target="_blank" rel="noopener">created a site with a shortname</a>, and then updated <code>engine</code> and <code>shortname</code> in <code>config/_default/params.toml</code>.</p>
+<pre><code class="language-toml">############################
+## Comments
+############################
+[comments]
+  # Comment provider:
+  #   0: Disabled
+  #   1: Disqus (https://disqus.com)
+  #   2: Commento (https://commento.io)
+  engine = 1
+
+  # Which page types are commentable?
+  commentable = {page = true, post = true, docs = true, project = true, publication = true, talk = true}
+
+  # Configuration of Disqus.
+  [comments.disqus]
+    shortname = &quot;alorchhotagithubio&quot;  # Paste the shortname from your Disqus dashboard.
+    show_count = true  # Show comment count in page header? (true/false)
+
+  # Configuration of Commento.
+  [comments.commento]
+    # If self-hosting Commento, enter its URL here (e.g. &quot;https://commento.?.com&quot;), otherwise leave empty.
+    url = &quot;&quot;
+</code></pre>
+</li>
+</ol>
+<h2 id="deploy">Step-4: Hosting and deployment</h2>
+<p>There are many different ways to host and deploy a website. Github provides free hosting. Deploying a site using <a href="https://pages.github.com/" target="_blank" rel="noopener">Github Pages</a> is easy &ndash; which I used here. For further details, you may look <a href="https://docs.github.com/en/github/working-with-github-pages/about-github-pages" target="_blank" rel="noopener">here</a> or <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/" target="_blank" rel="noopener">here</a>.</p>
+<ol>
+<li>
+<p>On the Github website, I went to <em>Settings</em> of my repository, scrolled to the <em>Github Pages</em> section, and set <em>master</em> branch + <em>/docs</em> folder as the source. Consequently, my site was published at <a href="https://alorchhota.github.io/" target="_blank" rel="noopener">https://alorchhota.github.io/</a>.</p>
+<p><img src="/posts/gh_page_config.png" alt="Github Pages Configuration"></p>
+<p>Note:</p>
+<ul>
+<li>The repository must be public to use Github Pages for free.</li>
+<li>The site address would be different if the repository name were different.</li>
+</ul>
+</li>
+<li>
+<p>In RStudio, I changed <code>publishDir</code> in <code>config/_default/config.toml</code>.</p>
+<pre><code class="language-toml">############################
+## Advanced options below ##
+############################
+
+# Publish website in docs directory to host on github pages
+publishDir = &quot;docs&quot;
+</code></pre>
+</li>
+<li>
+<p>Built the website to publish. Notice <code>hugo_cmd()</code> function.</p>
+<pre><code class="language-r">stop_server() # when server is running
+build_site()
+blogdown::hugo_cmd(c(&quot;-b&quot;, &quot;https://alorchhota.github.io/&quot;)) # change site url
+serve_site()
+</code></pre>
+</li>
+<li>
+<p>Finally, after checking if the site was rendered correctly on the local computer, I committed all the changes in the repository and pushed the code to the remote server from Terminal.</p>
+<pre><code class="language-sh">git add .
+git commit -m &quot;deploying site&quot;
+git push
+</code></pre>
+<p>The website should be publicly available at the Google Pages site url in a few minutes.</p>
+</li>
+</ol>
+<p>I hope this post makes website development easy for people with some knowledge of R.</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/academic/">Academic</a>
+  
+  <a class="badge badge-light" href="/tag/website/">Website</a>
+  
+  <a class="badge badge-light" href="/tag/how-to/">How to</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/post/2021-01-26_personal_website/&amp;text=How%20I%20created%20my%20website" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/post/2021-01-26_personal_website/&amp;t=How%20I%20created%20my%20website" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=How%20I%20created%20my%20website&amp;body=/post/2021-01-26_personal_website/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/post/2021-01-26_personal_website/&amp;title=How%20I%20created%20my%20website" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=How%20I%20created%20my%20website%20/post/2021-01-26_personal_website/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/post/2021-01-26_personal_website/&amp;title=How%20I%20created%20my%20website" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu9c7bdafa947b52f9a223373f52edfcaf_25836_270x270_fill_q75_lanczos_center.jpg" alt="Nikos Kostagiolas">
+    
+
+    <div class="media-body">
+      <h5 class="card-title">Nikos Kostagiolas</h5>
+      <h6 class="card-subtitle">CS Ph.D. Student</h6>
+      <p class="card-text">Hi! I am an Ph.D. student in Computer Science at the CaSToRC unit of the Cyprus Institute under the supervision of Prof. Mihalis Nicolaou, focusing on Representation Learning and Computer Vision.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:n.kostagiolas@cyi.ac.cy" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=ZwNxluIAAAAJ%27" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/kostagiolasn" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/nikos3388" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/linkedin.com/in/nikos-kostagiolas-2a3b0242" >
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/media/cv.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "alorchhotagithubio" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/getting-started/">Welcome to Wowchemy, the website builder for Hugo</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    © 2020-2021 Ashis Saha
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with
+    <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://alorchhotagithubio.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/wowchemy.min.3a2eb8710dad572bd5fa6505720c2efc.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

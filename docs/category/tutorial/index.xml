@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial | Nikos Kostagiolas</title>
+    <link>/category/tutorial/</link>
+      <atom:link href="/category/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tutorial</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2020-2021 Ashis Saha</copyright><lastBuildDate>Tue, 26 Jan 2021 16:30:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Tutorial</title>
+      <link>/category/tutorial/</link>
+    </image>
+    
+    <item>
+      <title>How I created my website</title>
+      <link>/post/2021-01-26_personal_website/</link>
+      <pubDate>Tue, 26 Jan 2021 16:30:00 +0000</pubDate>
+      <guid>/post/2021-01-26_personal_website/</guid>
+      <description>&lt;p&gt;Whether one needs a personal website for professional growth is out of the question. Of course, we need it. Instead, the question is: &lt;em&gt;how attractive and elegant is the website?&lt;/em&gt; Being a Ph.D. student, it&amp;rsquo;s not a surprise that I find an academic-theme website very attractive. Developing such a website from the scratch needs huge time and effort. Luckily, there are open source templates such as &lt;a href=&#34;https://themes.gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo templates&lt;/a&gt;. Recently I created &lt;a href=&#34;https://alorchhota.github.io/&#34; target=&#34;_blank&#34;&gt;my website&lt;/a&gt; using such a template. Below is a blurred screenshot of the site.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/posts/website_preview.png&#34; alt=&#34;A blurred screenshot of the site&#34;&gt;&lt;/p&gt;
+&lt;p&gt;What I like about the website are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It is simple in design, attractive in appearance, and elegant in presentation.&lt;/li&gt;
+&lt;li&gt;Easy to customize if you know R.&lt;/li&gt;
+&lt;li&gt;HTML, JavaScript, or CSS knowledge is NOT necessary.&lt;/li&gt;
+&lt;li&gt;The code is maintained as a repository in Github. As a result, it&amp;rsquo;s easy to edit or update the site.&lt;/li&gt;
+&lt;li&gt;The site has been deployed in Github, no need to buy a domain name. It is also easy to deploy the site in a custom domain name.&lt;/li&gt;
+&lt;li&gt;It offers a simple and powerful personal blogging feature.&lt;/li&gt;
+&lt;li&gt;Seamlessly rendered in computers, cell-phones, iPads, and other devices.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Though the &lt;a href=&#34;https://themes.gohugo.io/academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo academic template&lt;/a&gt; was fairly simple, first I had to figure out how to use it and then how to customize it. I started by looking into the blog posts by &lt;a href=&#34;https://alison.rbind.io/post/2017-06-12-up-and-running-with-blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Alison Hill&lt;/a&gt;, &lt;a href=&#34;https://lmyint.github.io/post/hugo-academic-tips/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Leslie Myint&lt;/a&gt;, and  &lt;a href=&#34;https://divingintogeneticsandgenomics.rbind.io/post/hugo-academic-theme-blog-down-deployment-some-details/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ming Tang&lt;/a&gt;. While each of these blogs was helpful, the actual development was slightly different because things have changed since their publications. Here I share how I used and personalized the template.&lt;/p&gt;
+&lt;p&gt;I divide the website development into four steps.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;#requirement&#34;&gt;Requirement gathering&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#template&#34;&gt;Just running a template site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#personalize&#34;&gt;Personalizing the site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#deploy&#34;&gt;Hosting and deployment&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;requirement&#34;&gt;Step-1: Requirement gathering&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;I have &lt;a href=&#34;https://www.r-project.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R&lt;/a&gt; and &lt;a href=&#34;https://rstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RStudio&lt;/a&gt; installed on my computer. Working knowledge of R coding is necessary.&lt;/li&gt;
+&lt;li&gt;Installed &lt;a href=&#34;https://cran.r-project.org/web/packages/blogdown/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown&lt;/a&gt; package in R. The book &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown: Creating Websites with R Markdown&lt;/a&gt; is a good resource to know the basics related to this website development.&lt;/li&gt;
+&lt;li&gt;Installed &lt;a href=&#34;https://golang.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GO language&lt;/a&gt; on the computer.&lt;/li&gt;
+&lt;li&gt;I have a &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt; account. Working knowledge of Github is necessary.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;template&#34;&gt;Step-2: Just running a template site&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;I &lt;a href=&#34;https://docs.github.com/en/github/getting-started-with-github/fork-a-repo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;forked&lt;/a&gt; the &lt;a href=&#34;https://github.com/wowchemy/starter-academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;starter-academic&lt;/a&gt; repository on my Github account. Alternatively, one can create a repository using &lt;a href=&#34;https://docs.github.com/en/github/getting-started-with-github/fork-a-repo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;starter-academic&lt;/a&gt; as &lt;a href=&#34;https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;a template&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.github.com/en/github/administering-a-repository/renaming-a-repository&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Renamed&lt;/a&gt; the repository to &lt;em&gt;alorchhota.github.io&lt;/em&gt; from Settings. Please note the name format here: &lt;strong&gt;[myaccountid].github.io&lt;/strong&gt;. This name format would be useful later to deploy the website. &lt;a href=&#34;https://github.com/alorchhota/alorchhota.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Here&lt;/a&gt; is my repository &amp;ndash; you may take a look if you like.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cloned the repository on my local computer using Terminal.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{bash}&#34;&gt;git clone https://github.com/alorchhota/alorchhota.github.io # remember to use your repository
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Opened the repository in RStudio as a new package (from an existing directory). There I loaded the blogdown package and installed Hugo.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{r}&#34;&gt;library(blogdown)
+blogdown::install_hugo()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Restarted RStudio &amp;ndash; required for loading the updated &lt;code&gt;$PATH&lt;/code&gt; variable.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In Rstudio, I built the template website, and start the server.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{r}&#34;&gt;library(blogdown)
+build_site()
+# hugo: downloading modules â€¦
+# hugo: collected modules in 15019 ms
+# Start building sites â€¦ 
+# 
+#                    | EN  
+# -------------------+-----
+#   Pages            | 52  
+#   Paginator pages  |  0  
+#   Non-page files   |  7  
+#   Static files     |  3  
+#   Processed images | 39  
+#   Aliases          | 12  
+#   Sitemaps         |  1  
+#   Cleaned          |  0  
+# 
+# Total in 26388 ms
+serve_site()
+# Launching the server via the command:
+#   C:/Users/Shatil/AppData/Roaming/Hugo/0.80.0/hugo.exe server --bind 127.0.0.1 -p 4321 --themesDir themes -D -F --navigateToChanged
+# Serving the directory . at http://localhost:4321
+# Launched the hugo server in the background (process ID: 9296). To stop it, call blogdown::stop_server() or restart the R session.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;At this point, the template website was visible in the RStudio &lt;em&gt;Viewer&lt;/em&gt; panel (see the image below).
+&lt;img src=&#34;/posts/rstudio_website.png&#34; alt=&#34;Sample website view in RStudio&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When I clicked on the button as marked by a red circle, the website opened in a web browser. Generally, the website updated updated each time I saved any change. Occasionally, I needed to stop the site by calling &lt;code&gt;stop_server()&lt;/code&gt;, and then restart by calling &lt;code&gt;build_site()&lt;/code&gt; and &lt;code&gt;serve_site()&lt;/code&gt; manually.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;personalize&#34;&gt;Step-3: Personalizing the site&lt;/h2&gt;
+&lt;p&gt;The variables in the template repository are pretty self-explanatory and need no explanation. So, instead of describing every variable change, here I mention only the notable changes. You are welcome to visit &lt;a href=&#34;https://github.com/alorchhota/alorchhota.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;my repository&lt;/a&gt; to see all changes.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Updated the title and copyright in the file: &lt;code&gt;config/_default/config.toml&lt;/code&gt; keeping everything else unchanged.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;# Title of your site
+title = &amp;quot;Ashis Saha&amp;quot;
+
+# The URL of your site.
+# End your URL with a `/` trailing slash, e.g. `https://example.com/`.
+baseurl = &amp;quot;&amp;quot;
+
+# Enter a copyright notice to display in the site footer.
+# To display a copyright symbol, type `&amp;amp;copy;`. For current year, type `{year}`.
+copyright = &amp;quot;© 2020 Ashis Saha&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Deleted the demo file: &lt;code&gt;content/home/demo.md&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated &lt;code&gt;content/authors/admin/_index.md&lt;/code&gt; with personal information. Notably, I updated my name, changed the google-scholar icon, and added about-me. I also set &lt;em&gt;highlight_name: true&lt;/em&gt; to highlight my names in publication-author lists.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{r}&#34;&gt;---
+# Display name
+title: Ashis Saha
+
+# ...
+
+social:
+- icon: google-scholar
+  icon_pack: ai
+  link: https://scholar.google.co.uk/citations?user=e6Ku7IIAAAAJ
+
+# ...
+
+# Highlight the author in author lists? (true/false)
+highlight_name: true
+---
+
+I am a Ph.D. student advised by  ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Replaced the &lt;code&gt;content/authors/admin/avatar.jpg&lt;/code&gt; file with my profile picture.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Copied my CV (&lt;em&gt;Ashis_Saha_CV.pdf&lt;/em&gt;) in &lt;code&gt;static/media/&lt;/code&gt; folder and updated &lt;code&gt;content/authors/admin/_index.md&lt;/code&gt; file to include the CV.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Link to a PDF of your resume/CV.
+# To use: copy your resume to `static/media/resume.pdf`, enable `ai` icons in `params.toml`, 
+# and uncomment the lines below.
+- icon: cv
+  icon_pack: ai
+  link: media/Ashis_Saha_CV.pdf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Deleted a few files from &lt;code&gt;content/home&lt;/code&gt; folder: &lt;code&gt;skills.md&lt;/code&gt;, &lt;code&gt;accomplishments.md&lt;/code&gt;, and &lt;code&gt;tags.md&lt;/code&gt;. You may keep them if you like.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated &lt;code&gt;content/home/experience.md&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Commented out &lt;code&gt;content:&lt;/code&gt; and &lt;code&gt;design:&lt;/code&gt; in &lt;code&gt;content/home/contact.md&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# content:
+#   # Automatically link email and phone or display as text?
+#   autolink: true
+#   
+#   # Email form provider
+#   form:
+#     provider: netlify
+#     formspree:
+#       id:
+#     netlify:
+#       # Enable CAPTCHA challenge to reduce spam?
+#       captcha: false
+#   
+# design:
+#   columns: &#39;2&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated email, phone number and address in &lt;code&gt;config/_default/params.toml&lt;/code&gt;. Also commented out a few social links which are already available below the profile picture.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Enter contact details (optional). To hide a field, clear it to &amp;quot;&amp;quot;.
+email = &amp;quot;****@***.com&amp;quot;
+phone = &amp;quot;+1-***-***-****&amp;quot;
+
+# Address
+# For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
+address = {street = &amp;quot;*** St, Apt ***&amp;quot;, city = &amp;quot;***&amp;quot;, region = &amp;quot;MD&amp;quot;, postcode = &amp;quot;*****&amp;quot;, country = &amp;quot;United States&amp;quot;, country_code = &amp;quot;US&amp;quot;}
+
+# Geographic coordinates
+# To get your coordinates, right-click on Google Maps and choose &amp;quot;What&#39;s here?&amp;quot;. The coords will show up at the bottom.
+# coordinates = {latitude = &amp;quot;37.4275&amp;quot;, longitude = &amp;quot;-122.1697&amp;quot;}
+
+# Directions for visitors to locate you.
+# directions = &amp;quot;Enter Building 1 and take the stairs to Office 200 on Floor 2&amp;quot;
+
+# Office hours
+# A list of your office hours. To remove, set to an empty list `[]`.
+# office_hours = [&amp;quot;Monday 10:00 to 13:00&amp;quot;, &amp;quot;Wednesday 09:00 to 10:00&amp;quot;]
+
+# Enter an optional link for booking appointments (e.g. calendly.com).
+# appointment_url = &amp;quot;https://calendly.com&amp;quot;
+
+# Contact links
+#   Set to `[]` to disable, or comment out unwanted lines with a hash `#`.
+#contact_links = [
+#  {icon = &amp;quot;twitter&amp;quot;, icon_pack = &amp;quot;fab&amp;quot;, name = &amp;quot;DM Me&amp;quot;, link = &amp;quot;https://twitter.com/Twitter&amp;quot;},
+#  {icon = &amp;quot;skype&amp;quot;, icon_pack = &amp;quot;fab&amp;quot;, name = &amp;quot;Skype Me&amp;quot;, link = &amp;quot;skype:echo123?call&amp;quot;},
+#  {icon = &amp;quot;keybase&amp;quot;, icon_pack = &amp;quot;fab&amp;quot;, name = &amp;quot;Chat on Keybase&amp;quot;, link = &amp;quot;https://keybase.io/&amp;quot;},
+#  {icon = &amp;quot;comments&amp;quot;, icon_pack = &amp;quot;fas&amp;quot;, name = &amp;quot;Discuss on Forum&amp;quot;, link = &amp;quot;https://discourse.gohugo.io&amp;quot;},
+#  # {icon = &amp;quot;telegram&amp;quot;, icon_pack = &amp;quot;fab&amp;quot;, name = &amp;quot;Telegram Me&amp;quot;, link = &amp;quot;https://telegram.me/@Telegram&amp;quot;},
+#  ]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reordered the menu items by changing the weight values in &lt;code&gt;config/_default/menus.toml&lt;/code&gt;. Smaller weights appear leftward.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[[main]]
+  name = &amp;quot;Home&amp;quot;
+  url = &amp;quot;#about&amp;quot;
+  weight = 10
+
+[[main]]
+  name = &amp;quot;Experience&amp;quot;
+  url = &amp;quot;#experience&amp;quot;
+  weight = 20
+
+[[main]]
+  name = &amp;quot;Publications&amp;quot;
+  url = &amp;quot;#featured&amp;quot;
+  weight = 30
+
+# ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Right-aligned the menu items using &lt;code&gt;align&lt;/code&gt; parameter of &lt;code&gt;main_menu&lt;/code&gt; in &lt;code&gt;config/_default/params.toml&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;############################
+## Advanced
+############################
+
+# Main menu alignment (l = left, c = center, r = right) and logo options.
+main_menu = {align = &amp;quot;r&amp;quot;, show_logo = true, highlight_active_link = true, show_language = false, show_day_night = true, show_search = true}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reordered the sections by setting appropriate weight values in &lt;code&gt;*.md&lt;/code&gt; files in &lt;code&gt;contect/home/&lt;/code&gt; folder. Smaller weights appear at the top. An example in &lt;code&gt;content/home/publications.md&lt;/code&gt; file is shown below.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Order that this section appears on the page.
+weight: 50
+
+title: Recent Publications
+subtitle: &#39;&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For each publication, I duplicated the existing &lt;code&gt;example&lt;/code&gt; folder in &lt;code&gt;content/publication/&lt;/code&gt;. In each folder, I kept only one file (&lt;code&gt;index.md&lt;/code&gt;) and edited it. I ensured using &lt;code&gt;admin&lt;/code&gt; as my name to highlight my name in the author list. For manuscripts, posters, or slides, I created sub-folders in &lt;code&gt;static&lt;/code&gt;, copied necessary files there, and used their links in &lt;code&gt;url_pdf&lt;/code&gt;, &lt;code&gt;url_poster&lt;/code&gt;, or &lt;code&gt;url_slides&lt;/code&gt; variables, respectively. An example &lt;code&gt;index.md&lt;/code&gt; file is shown below.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;---
+title: &amp;quot;Co-expression networks reveal the tissue-specific regulation of transcription and splicing&amp;quot;
+
+# Authors
+# If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
+# and it will be replaced with their full name and linked to their profile.
+authors:
+- admin
+- Yungil Kim
+- Ariel D.H. Gewirtz
+- Brian Jo
+- Chuan Gao
+- Ian C. McDowell
+- The GTEx Consortium
+- Barbara E. Engelhardt
+- Alexis Battle
+
+date: &amp;quot;2017-10-11T00:00:00Z&amp;quot;
+doi: &amp;quot;&amp;quot;
+
+# Schedule page publish date (NOT publication&#39;s date).
+publishDate: &amp;quot;2017-01-01T00:00:00Z&amp;quot;
+
+# Publication type.
+# Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
+# 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
+# 7 = Thesis; 8 = Patent
+publication_types: [&amp;quot;2&amp;quot;]
+
+# Publication name and optional abbreviated publication name.
+publication: In *Genome Research*
+publication_short: In *Genome Research*
+
+abstract: Gene co-expression networks capture biologically important patterns in gene expression data, enabling functional analyses of genes, discovery of biomarkers, and interpretation of genetic variants. Most network analyses to date have been limited to assessing correlation between total gene expression levels in a single tissue or small sets of tissues. Here, we built networks that additionally capture the regulation of relative isoform abundance and splicing, along with tissue-specific connections unique to each of a diverse set of tissues. We used the Genotype-Tissue Expression (GTEx) project v6 RNA sequencing data across 50 tissues and 449 individuals. First, we developed a framework called Transcriptome-Wide Networks (TWNs) for combining total expression and relative isoform levels into a single sparse network, capturing the interplay between the regulation of splicing and transcription. We built TWNs for 16 tissues and found that hubs in these networks were strongly enriched for splicing and RNA binding genes, demonstrating their utility in unraveling regulation of splicing in the human transcriptome. Next, we used a Bayesian biclustering model that identifies network edges unique to a single tissue to reconstruct Tissue-Specific Networks (TSNs) for 26 distinct tissues and 10 groups of related tissues. Finally, we found genetic variants associated with pairs of adjacent nodes in our networks, supporting the estimated network structures and identifying 20 genetic variants with distant regulatory impact on transcription and splicing. Our networks provide an improved understanding of the complex relationships of the human transcriptome across tissues. 
+
+# # Summary. An optional shortened abstract.
+# summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+
+tags: []
+
+# Display this page in the Featured widget?
+featured: true
+
+# Custom links (uncomment lines below)
+# links:
+# - name: Custom Link
+#   url: http://example.org
+
+url_pdf: &#39;paper/twn.pdf&#39;
+url_code: &#39;https://github.com/battle-lab/twn_tsn&#39;
+url_dataset: &#39;https://gtexportal.org/home/datasets#filesetFilesDiv76&#39;
+url_poster: &#39;&#39;
+url_project: &#39;&#39;
+url_slides: &#39;&#39;
+url_source: &#39;&#39;
+url_video: &#39;&#39;
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page&#39;s folder. 
+# image:
+#   caption: &#39;Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)&#39;
+#   focal_point: &amp;quot;&amp;quot;
+#   preview_only: false
+
+# Associated Projects (optional).
+#   Associate this publication with one or more of your projects.
+#   Simply enter your project&#39;s folder or file name without extension.
+#   E.g. `internal-project` references `content/project/internal-project/index.md`.
+#   Otherwise, set `projects: []`.
+# projects:
+# - example
+
+# Slides (optional).
+#   Associate this publication with Markdown slides.
+#   Simply enter your slide deck&#39;s filename without extension.
+#   E.g. `slides: &amp;quot;example&amp;quot;` references `content/slides/example/index.md`.
+#   Otherwise, set `slides: &amp;quot;&amp;quot;`.
+# slides: crossmap
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Changed &lt;code&gt;view&lt;/code&gt; in &lt;code&gt;content/publication/_index.md&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# View.
+#   1 = List
+#   2 = Compact
+#   3 = Card
+#   4 = Citation
+view: 4
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Changed &lt;code&gt;view&lt;/code&gt; in &lt;code&gt;content/home/featured.md&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;design:
+  # Choose a view for the listings:
+  #   1 = List
+  #   2 = Compact
+  #   3 = Card
+  #   4 = Citation (publication only)
+  view: 4
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To add one more menu item (Extracurricular), first added a menu entry in &lt;code&gt;config/_default/menus.toml&lt;/code&gt; with a url and a weight to determine the order.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[[main]]
+  name = &amp;quot;Extracurricular&amp;quot;
+  url = &amp;quot;#extracurricular&amp;quot;
+  weight = 55
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then, I added the file &lt;code&gt;extracurricular.md&lt;/code&gt; file in &lt;code&gt;contect/home/&lt;/code&gt; with necessary contents in R mark down format.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;---
+widget: blank
+headless: true
+
+# This file represents a page section.
+headless: true
+
+# Order that this section appears on the page.
+weight: 120
+
+title: Extracuricular Activities
+subtitle: &#39;&#39;
+
+design:
+  # Choose how many columns the section has. Valid values: 1 or 2.
+  columns: &#39;2&#39;
+---
+
+### Badhan (a voluntary  blood donors&#39; organization)
+...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To create a blog post, I duplicated the existing &lt;code&gt;getting-started&lt;/code&gt; folder in &lt;code&gt;content/post&lt;/code&gt;, replaced  &lt;code&gt;feature.jpg&lt;/code&gt; with a preview image, and edited &lt;code&gt;index.md&lt;/code&gt; inside the folder.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: How I created my website
+subtitle: Steps to build and deploy an academic-theme website.
+
+# Summary for listings and search engines
+summary: Steps to build and deploy an academic-theme website.
+
+# Link this post with a project
+projects: []
+
+# Date published
+date: &amp;quot;2021-01-26T11:00:00Z&amp;quot;
+
+# Date updated
+lastmod: &amp;quot;2021-01-26T11:00:00Z&amp;quot;
+
+# Is this an unpublished draft?
+draft: false
+
+# Show this page in the Featured widget?
+featured: false
+
+# Featured image
+# Place an image named `featured.jpg/png` in this page&#39;s folder and customize its options here.
+image:
+  caption: &#39;Blurred screenshot of the website&#39;
+  focal_point: &amp;quot;&amp;quot;
+  placement: 2
+  preview_only: true
+
+authors:
+- admin
+
+tags:
+- Academic
+- Website
+- How to
+
+categories:
+- Tutorial
+
+---
+Whether one needs a personal website ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note: if &lt;code&gt;draft: true&lt;/code&gt;, the post will be shown only locally, but not publicly.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To facilitate readers&amp;rsquo; comments, I first signed up in &lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Disqus&lt;/a&gt;, &lt;a href=&#34;https://help.disqus.com/en/articles/1717111-what-s-a-shortname&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;created a site with a shortname&lt;/a&gt;, and then updated &lt;code&gt;engine&lt;/code&gt; and &lt;code&gt;shortname&lt;/code&gt; in &lt;code&gt;config/_default/params.toml&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;############################
+## Comments
+############################
+[comments]
+  # Comment provider:
+  #   0: Disabled
+  #   1: Disqus (https://disqus.com)
+  #   2: Commento (https://commento.io)
+  engine = 1
+
+  # Which page types are commentable?
+  commentable = {page = true, post = true, docs = true, project = true, publication = true, talk = true}
+
+  # Configuration of Disqus.
+  [comments.disqus]
+    shortname = &amp;quot;alorchhotagithubio&amp;quot;  # Paste the shortname from your Disqus dashboard.
+    show_count = true  # Show comment count in page header? (true/false)
+
+  # Configuration of Commento.
+  [comments.commento]
+    # If self-hosting Commento, enter its URL here (e.g. &amp;quot;https://commento.?.com&amp;quot;), otherwise leave empty.
+    url = &amp;quot;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;deploy&#34;&gt;Step-4: Hosting and deployment&lt;/h2&gt;
+&lt;p&gt;There are many different ways to host and deploy a website. Github provides free hosting. Deploying a site using &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github Pages&lt;/a&gt; is easy &amp;ndash; which I used here. For further details, you may look &lt;a href=&#34;https://docs.github.com/en/github/working-with-github-pages/about-github-pages&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; or &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;On the Github website, I went to &lt;em&gt;Settings&lt;/em&gt; of my repository, scrolled to the &lt;em&gt;Github Pages&lt;/em&gt; section, and set &lt;em&gt;master&lt;/em&gt; branch + &lt;em&gt;/docs&lt;/em&gt; folder as the source. Consequently, my site was published at &lt;a href=&#34;https://alorchhota.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://alorchhota.github.io/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/posts/gh_page_config.png&#34; alt=&#34;Github Pages Configuration&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Note:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The repository must be public to use Github Pages for free.&lt;/li&gt;
+&lt;li&gt;The site address would be different if the repository name were different.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In RStudio, I changed &lt;code&gt;publishDir&lt;/code&gt; in &lt;code&gt;config/_default/config.toml&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;############################
+## Advanced options below ##
+############################
+
+# Publish website in docs directory to host on github pages
+publishDir = &amp;quot;docs&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Built the website to publish. Notice &lt;code&gt;hugo_cmd()&lt;/code&gt; function.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;stop_server() # when server is running
+build_site()
+blogdown::hugo_cmd(c(&amp;quot;-b&amp;quot;, &amp;quot;https://alorchhota.github.io/&amp;quot;)) # change site url
+serve_site()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Finally, after checking if the site was rendered correctly on the local computer, I committed all the changes in the repository and pushed the code to the remote server from Terminal.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;git add .
+git commit -m &amp;quot;deploying site&amp;quot;
+git push
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The website should be publicly available at the Google Pages site url in a few minutes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I hope this post makes website development easy for people with some knowledge of R.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

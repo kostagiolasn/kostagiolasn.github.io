@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications | Nikos Kostagiolas</title>
+    <link>/publication/</link>
+      <atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2020-2021 Ashis Saha</copyright><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Publications</title>
+      <link>/publication/</link>
+    </image>
+    
+    <item>
+      <title>Classifying Points of Interest with Minimum Metadata</title>
+      <link>/publication/athena_paper/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/athena_paper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LGM-PC: A Tool for POI Classification on QGIS</title>
+      <link>/publication/athena_demo/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/athena_demo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exploring different sequence representations and classification methods for the prediction of nucleosome positioning</title>
+      <link>/publication/nucleosomes/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/nucleosomes/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
