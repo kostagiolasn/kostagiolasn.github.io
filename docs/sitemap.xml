@@ -71,10 +71,15 @@
     <loc>/publication/nucleosomes/</loc>
     <lastmod>2022-07-26T13:47:45+03:00</lastmod>
   </url><url>
-    <loc>/project/example/</loc>
-  </url><url>
-    <loc>/categories/</loc>
+    <loc>/tag/deep-learning/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/project/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/project/example/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
   </url>
 </urlset>

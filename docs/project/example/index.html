@@ -34,7 +34,7 @@
   
     
   
-  <meta name="description" content="Tensor Component Analysis for Interpreting the Latent Space of GANs Tensor Component Analysis for Interpreting the Latent Space of GANs James Oldfield1, Markos Georgopoulos2, Yannis Panagakis3, Mihalis A Nicolaou4, Ioannis Patras1">
+  <meta name="description" content="Project page of our SETN 2022 paper.">
 
   
   <link rel="alternate" hreflang="en-us" href="/project/example/">
@@ -278,12 +278,14 @@
   
   <meta property="og:site_name" content="Nikos Kostagiolas">
   <meta property="og:url" content="/project/example/">
-  <meta property="og:title" content=" | Nikos Kostagiolas">
-  <meta property="og:description" content="Tensor Component Analysis for Interpreting the Latent Space of GANs Tensor Component Analysis for Interpreting the Latent Space of GANs James Oldfield1, Markos Georgopoulos2, Yannis Panagakis3, Mihalis A Nicolaou4, Ioannis Patras1"><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
+  <meta property="og:title" content="Unsupervised Discovery of Semantic Concepts in Satellite Imagery with Style-based Wavelet-driven Generative Models | Nikos Kostagiolas">
+  <meta property="og:description" content="Project page of our SETN 2022 paper."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
   <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
   
     
+      <meta property="article:published_time" content="2016-04-27T00:00:00&#43;00:00">
     
+    <meta property="article:modified_time" content="2016-04-27T00:00:00&#43;00:00">
   
 
   
@@ -307,10 +309,10 @@
     "@type": "WebPage",
     "@id": "/project/example/"
   },
-  "headline": "",
+  "headline": "Unsupervised Discovery of Semantic Concepts in Satellite Imagery with Style-based Wavelet-driven Generative Models",
   
-  "datePublished": "0001-01-01T00:00:00Z",
-  "dateModified": "0001-01-01T00:00:00Z",
+  "datePublished": "2016-04-27T00:00:00Z",
+  "dateModified": "2016-04-27T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -325,7 +327,7 @@
       "url": "/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Tensor Component Analysis for Interpreting the Latent Space of GANs Tensor Component Analysis for Interpreting the Latent Space of GANs James Oldfield1, Markos Georgopoulos2, Yannis Panagakis3, Mihalis A Nicolaou4, Ioannis Patras1"
+  "description": "Project page of our SETN 2022 paper."
 }
 </script>
 
@@ -343,7 +345,7 @@
 
 
 
-  <title> | Nikos Kostagiolas</title>
+  <title>Unsupervised Discovery of Semantic Concepts in Satellite Imagery with Style-based Wavelet-driven Generative Models | Nikos Kostagiolas</title>
 
 </head>
 
@@ -684,7 +686,7 @@
   
   
 <div class="article-container pt-3">
-  <h1></h1>
+  <h1>Unsupervised Discovery of Semantic Concepts in Satellite Imagery with Style-based Wavelet-driven Generative Models</h1>
 
   
 
@@ -703,7 +705,7 @@
     
       
     
-    Jan 1, 0001
+    Apr 27, 2016
   </span>
   
 
@@ -739,6 +741,41 @@
 
 
 
+<div class="btn-links mb-3">
+  
+  <a class="btn btn-outline-primary my-1" href="/setn2022/index.html" target="_blank" rel="noopener">Go to Project Site</a>
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
 
   
 </div>
@@ -748,50 +785,7 @@
   <div class="article-container">
 
     <div class="article-style">
-      <pre><code> Tensor Component Analysis for Interpreting the Latent Space of GANs   
-</code></pre>
-<h1 id="tensor-component-analysis-for-interpreting-the-latent-space-of-gans">Tensor Component Analysis for Interpreting the Latent Space of GANs</h1>
-<p><a href="/cdn-cgi/l/email-protection#82e8ace3acedeee6e4ebe7eee6c2f3eff7eeace3e1acf7e9">James Oldfield</a>1, Markos Georgopoulos2, Yannis Panagakis3, Mihalis A Nicolaou4, Ioannis Patras1<br>
-1Queen Mary University of London, 2Imperial College London, 3University of Athens, 4The Cyprus Institute</p>
-<p><a href="https://www.bmvc2021-virtualconference.com/assets/papers/1617.pdf" target="_blank" rel="noopener">Paper</a> <a href="https://github.com/james-oldfield/TCA-latent-space" target="_blank" rel="noopener">Code</a></p>
-<h1 id="abstract">Abstract</h1>
-<p>This work addresses the problem of finding interpretable directions in the latent space of pre-trained Generative Adversarial Networks (GANs) to facilitate controllable image synthesis. Such interpretable directions correspond to transformations that can affect both the style and geometry of the synthetic images. However, existing approaches that utilise linear techniques to find these transformations often fail to provide an intuitive way to separate these two sources of variation. To address this, we propose to a) perform a <em>multilinear</em> decomposition of the tensor of intermediate representations, and b) use a tensor-based regression to map directions found using this decomposition to the latent space. Our scheme allows for both linear edits corresponding to the individual modes of the tensor, and non-linear ones that model the multiplicative interactions between them. We show experimentally that we can utilise the former to better separate style- from geometry-based transformations, and the latter to generate an extended set of possible transformations in comparison to prior works.</p>
-<p><img src="./images/teaser.png" alt="teaser"></p>
-<h1 id="results">Results</h1>
-<p>Experimental results making edits along each mode of the tensor separately, or via our &ldquo;multilinear mixing&rdquo; higher-order terms.</p>
-<h1 id="multilinear-mixing">Multilinear mixing</h1>
-<p><img src="./images/thick.gif" alt="thick"></p>
-<p>Face thickness</p>
-<p><img src="./images/forehead.gif" alt="forehead"></p>
-<p>Forehead thickness</p>
-<p><img src="./images/skew.gif" alt="skew"></p>
-<p>Face skew</p>
-<h2 id="mode-wise-edits">Mode-wise edits</h2>
-<p><img src="./images/116-blonde.gif" alt="thick"></p>
-<p>Hair colour</p>
-<p><img src="./images/116-pitch.gif" alt="forehead"></p>
-<p>Pitch</p>
-<p><img src="./images/116-yaw.gif" alt="skew"></p>
-<p>Yaw</p>
-<p><img src="./images/edits-a.svg" alt=""></p>
-<h1 id="bibtex">BibTeX</h1>
-<p>If you find our work useful, please consider citing us:</p>
-<pre><code>  `@InProceedings{oldfield2021tca,           author = {Oldfield, James and Markos, Georgopoulos and Panagakis, Yannis                     and Nicolaou, Mihalis A. and Ioannis, Patras},           title = {Tensor Component Analysis for Interpreting the Latent Space of GANs},           booktitle = {BMVC},           month = {November},           year = {2021}         }`
-</code></pre>
-<h1 id="related-work">Related work</h1>
-<p><img src="https://genforce.github.io/sefa/assets/teaser.gif" alt="&amp;hellip;"></p>
-<h6 id="shen-et-al-closed-form-factorization-of-latent-semantics-in-gans">Shen et al. Closed-Form Factorization of Latent Semantics in GANs</h6>
-<p><a href="https://arxiv.org/pdf/2007.06600.pdf" target="_blank" rel="noopener">Paper</a></p>
-<p><img src="./images/ganspace-teaser.jpg" alt="&amp;hellip;"></p>
-<h6 id="härkönen-et-al-ganspace-discovering-interpretable-gan-controls">Härkönen et al. GANSpace: Discovering Interpretable GAN Controls</h6>
-<p><a href="https://arxiv.org/pdf/2004.02546.pdf" target="_blank" rel="noopener">Paper</a></p>
-<p><img src="./images/warped-overview.svg" alt="&amp;hellip;"></p>
-<h6 id="tzelepis-et-al-warpedganspace-finding-non-linear-rbf-paths-in-gan-latent-space">Tzelepis et al. WarpedGANSpace: Finding non-linear RBF paths in GAN latent space</h6>
-<p><a href="https://arxiv.org/pdf/2109.13357.pdf" target="_blank" rel="noopener">Paper</a></p>
-<hr>
-<p><a href="#">Back to top</a></p>
-<p>Project page inspired by the <a href="https://genforce.github.io/sefa/" target="_blank" rel="noopener">SeFA authors</a>.</p>
-
+      
     </div>
 
     
@@ -800,6 +794,12 @@
 
 
 
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/deep-learning/">Deep Learning</a>
+  
+</div>
 
 
 
@@ -814,7 +814,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=/project/example/&amp;text=" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=/project/example/&amp;text=Unsupervised%20Discovery%20of%20Semantic%20Concepts%20in%20Satellite%20Imagery%20with%20Style-based%20Wavelet-driven%20Generative%20Models" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -827,7 +827,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=/project/example/&amp;t=" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=/project/example/&amp;t=Unsupervised%20Discovery%20of%20Semantic%20Concepts%20in%20Satellite%20Imagery%20with%20Style-based%20Wavelet-driven%20Generative%20Models" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -840,7 +840,7 @@
       
       
       <li>
-        <a href="mailto:?subject=&amp;body=/project/example/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Unsupervised%20Discovery%20of%20Semantic%20Concepts%20in%20Satellite%20Imagery%20with%20Style-based%20Wavelet-driven%20Generative%20Models&amp;body=/project/example/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -853,7 +853,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/project/example/&amp;title=" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=/project/example/&amp;title=Unsupervised%20Discovery%20of%20Semantic%20Concepts%20in%20Satellite%20Imagery%20with%20Style-based%20Wavelet-driven%20Generative%20Models" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -866,7 +866,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=%20/project/example/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Unsupervised%20Discovery%20of%20Semantic%20Concepts%20in%20Satellite%20Imagery%20with%20Style-based%20Wavelet-driven%20Generative%20Models%20/project/example/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -879,7 +879,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=/project/example/&amp;title=" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=/project/example/&amp;title=Unsupervised%20Discovery%20of%20Semantic%20Concepts%20in%20Satellite%20Imagery%20with%20Style-based%20Wavelet-driven%20Generative%20Models" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
