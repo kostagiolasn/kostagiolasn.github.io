@@ -1,41 +1,88 @@
----
-title: Example Project
-summary: An example of using the in-built project page.
-tags:
-- Deep Learning
-date: "2016-04-27T00:00:00Z"
+     Tensor Component Analysis for Interpreting the Latent Space of GANs   
 
-# Optional external URL for project (replaces project detail page).
-external_link: ""
+Tensor Component Analysis for Interpreting the Latent Space of GANs
+===================================================================
 
-image:
-  caption: Photo by rawpixel on Unsplash
-  focal_point: Smart
+[James Oldfield](/cdn-cgi/l/email-protection#82e8ace3acedeee6e4ebe7eee6c2f3eff7eeace3e1acf7e9)1, Markos Georgopoulos2, Yannis Panagakis3, Mihalis A Nicolaou4, Ioannis Patras1  
+1Queen Mary University of London, 2Imperial College London, 3University of Athens, 4The Cyprus Institute
 
-links:
-- icon: twitter
-  icon_pack: fab
-  name: Follow
-  url: https://twitter.com/georgecushen
-url_code: ""
-url_pdf: ""
-url_slides: ""
-url_video: ""
+[Paper](https://www.bmvc2021-virtualconference.com/assets/papers/1617.pdf) [Code](https://github.com/james-oldfield/TCA-latent-space)
 
-# Slides (optional).
-#   Associate this project with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-slides: example
----
+Abstract
+========
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+This work addresses the problem of finding interpretable directions in the latent space of pre-trained Generative Adversarial Networks (GANs) to facilitate controllable image synthesis. Such interpretable directions correspond to transformations that can affect both the style and geometry of the synthetic images. However, existing approaches that utilise linear techniques to find these transformations often fail to provide an intuitive way to separate these two sources of variation. To address this, we propose to a) perform a _multilinear_ decomposition of the tensor of intermediate representations, and b) use a tensor-based regression to map directions found using this decomposition to the latent space. Our scheme allows for both linear edits corresponding to the individual modes of the tensor, and non-linear ones that model the multiplicative interactions between them. We show experimentally that we can utilise the former to better separate style- from geometry-based transformations, and the latter to generate an extended set of possible transformations in comparison to prior works.
 
-Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.
+![teaser](./images/teaser.png)
 
-Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.
+Results
+=======
 
-Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.
+Experimental results making edits along each mode of the tensor separately, or via our "multilinear mixing" higher-order terms.
 
-Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.
+Multilinear mixing
+==================
+
+![thick](./images/thick.gif)
+
+Face thickness
+
+![forehead](./images/forehead.gif)
+
+Forehead thickness
+
+![skew](./images/skew.gif)
+
+Face skew
+
+Mode-wise edits
+---------------
+
+![thick](./images/116-blonde.gif)
+
+Hair colour
+
+![forehead](./images/116-pitch.gif)
+
+Pitch
+
+![skew](./images/116-yaw.gif)
+
+Yaw
+
+![](./images/edits-a.svg)
+
+BibTeX
+======
+
+If you find our work useful, please consider citing us:
+
+      `@InProceedings{oldfield2021tca,           author = {Oldfield, James and Markos, Georgopoulos and Panagakis, Yannis                     and Nicolaou, Mihalis A. and Ioannis, Patras},           title = {Tensor Component Analysis for Interpreting the Latent Space of GANs},           booktitle = {BMVC},           month = {November},           year = {2021}         }`
+      
+
+Related work
+============
+
+![...](https://genforce.github.io/sefa/assets/teaser.gif)
+
+###### Shen et al. Closed-Form Factorization of Latent Semantics in GANs
+
+[Paper](https://arxiv.org/pdf/2007.06600.pdf)
+
+![...](./images/ganspace-teaser.jpg)
+
+###### Härkönen et al. GANSpace: Discovering Interpretable GAN Controls
+
+[Paper](https://arxiv.org/pdf/2004.02546.pdf)
+
+![...](./images/warped-overview.svg)
+
+###### Tzelepis et al. WarpedGANSpace: Finding non-linear RBF paths in GAN latent space
+
+[Paper](https://arxiv.org/pdf/2109.13357.pdf)
+
+* * *
+
+[Back to top](#)
+
+Project page inspired by the [SeFA authors](https://genforce.github.io/sefa/).
