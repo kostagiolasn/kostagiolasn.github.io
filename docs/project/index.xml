@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | Nikos Kostagiolas</title>
+    <link>/project/</link>
+      <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2020-2021 Ashis Saha</copyright>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Projects</title>
+      <link>/project/</link>
+    </image>
+    
+    <item>
+      <title></title>
+      <link>/project/example/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project/example/</guid>
+      <description>&lt;pre&gt;&lt;code&gt; Tensor Component Analysis for Interpreting the Latent Space of GANs   
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;tensor-component-analysis-for-interpreting-the-latent-space-of-gans&#34;&gt;Tensor Component Analysis for Interpreting the Latent Space of GANs&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;/cdn-cgi/l/email-protection#82e8ace3acedeee6e4ebe7eee6c2f3eff7eeace3e1acf7e9&#34;&gt;James Oldfield&lt;/a&gt;1, Markos Georgopoulos2, Yannis Panagakis3, Mihalis A Nicolaou4, Ioannis Patras1&lt;br&gt;
+1Queen Mary University of London, 2Imperial College London, 3University of Athens, 4The Cyprus Institute&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.bmvc2021-virtualconference.com/assets/papers/1617.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt; &lt;a href=&#34;https://github.com/james-oldfield/TCA-latent-space&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Code&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;abstract&#34;&gt;Abstract&lt;/h1&gt;
+&lt;p&gt;This work addresses the problem of finding interpretable directions in the latent space of pre-trained Generative Adversarial Networks (GANs) to facilitate controllable image synthesis. Such interpretable directions correspond to transformations that can affect both the style and geometry of the synthetic images. However, existing approaches that utilise linear techniques to find these transformations often fail to provide an intuitive way to separate these two sources of variation. To address this, we propose to a) perform a &lt;em&gt;multilinear&lt;/em&gt; decomposition of the tensor of intermediate representations, and b) use a tensor-based regression to map directions found using this decomposition to the latent space. Our scheme allows for both linear edits corresponding to the individual modes of the tensor, and non-linear ones that model the multiplicative interactions between them. We show experimentally that we can utilise the former to better separate style- from geometry-based transformations, and the latter to generate an extended set of possible transformations in comparison to prior works.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/teaser.png&#34; alt=&#34;teaser&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;results&#34;&gt;Results&lt;/h1&gt;
+&lt;p&gt;Experimental results making edits along each mode of the tensor separately, or via our &amp;ldquo;multilinear mixing&amp;rdquo; higher-order terms.&lt;/p&gt;
+&lt;h1 id=&#34;multilinear-mixing&#34;&gt;Multilinear mixing&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;./images/thick.gif&#34; alt=&#34;thick&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Face thickness&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/forehead.gif&#34; alt=&#34;forehead&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Forehead thickness&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/skew.gif&#34; alt=&#34;skew&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Face skew&lt;/p&gt;
+&lt;h2 id=&#34;mode-wise-edits&#34;&gt;Mode-wise edits&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;./images/116-blonde.gif&#34; alt=&#34;thick&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Hair colour&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/116-pitch.gif&#34; alt=&#34;forehead&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Pitch&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/116-yaw.gif&#34; alt=&#34;skew&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Yaw&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/edits-a.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;bibtex&#34;&gt;BibTeX&lt;/h1&gt;
+&lt;p&gt;If you find our work useful, please consider citing us:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  `@InProceedings{oldfield2021tca,           author = {Oldfield, James and Markos, Georgopoulos and Panagakis, Yannis                     and Nicolaou, Mihalis A. and Ioannis, Patras},           title = {Tensor Component Analysis for Interpreting the Latent Space of GANs},           booktitle = {BMVC},           month = {November},           year = {2021}         }`
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;related-work&#34;&gt;Related work&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://genforce.github.io/sefa/assets/teaser.gif&#34; alt=&#34;&amp;amp;hellip;&#34;&gt;&lt;/p&gt;
+&lt;h6 id=&#34;shen-et-al-closed-form-factorization-of-latent-semantics-in-gans&#34;&gt;Shen et al. Closed-Form Factorization of Latent Semantics in GANs&lt;/h6&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/pdf/2007.06600.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/ganspace-teaser.jpg&#34; alt=&#34;&amp;amp;hellip;&#34;&gt;&lt;/p&gt;
+&lt;h6 id=&#34;härkönen-et-al-ganspace-discovering-interpretable-gan-controls&#34;&gt;Härkönen et al. GANSpace: Discovering Interpretable GAN Controls&lt;/h6&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/pdf/2004.02546.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/warped-overview.svg&#34; alt=&#34;&amp;amp;hellip;&#34;&gt;&lt;/p&gt;
+&lt;h6 id=&#34;tzelepis-et-al-warpedganspace-finding-non-linear-rbf-paths-in-gan-latent-space&#34;&gt;Tzelepis et al. WarpedGANSpace: Finding non-linear RBF paths in GAN latent space&lt;/h6&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/pdf/2109.13357.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href=&#34;#&#34;&gt;Back to top&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Project page inspired by the &lt;a href=&#34;https://genforce.github.io/sefa/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SeFA authors&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
