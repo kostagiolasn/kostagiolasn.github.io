@@ -1,5 +1,5 @@
 ---
-title: Learning optimization algorithms with neural networks
+title: Unsupervised Discovery of Semantic Concepts in Satellite Imagery with Style-based Wavelet-driven Generative Models
 
 event: MSc in Data Science pre-graduation theses presentations
 
