@@ -9,8 +9,8 @@ date: "2016-04-27T00:00:00Z"
 external_link: "/setn2022/index.html"
 
 links:
-url_code: ""
+url_code: "https://github.com/kostagiolasn/SatConcepts"
 url_pdf: ""
-url_slides: ""
+url_slides: "talk/SETN.pptx"
 url_video: ""
 ---

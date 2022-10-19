@@ -38,7 +38,7 @@ links:
 - name: URL
   url: https://arxiv.org/abs/2208.02089
 url_pdf: ''
-url_code: https://github.com/kostagiolasn/Unsupervised-Discovery-of-Semantic-Concepts-in-Satellite-Imagery-with-Style-based-Wavelet-driven-Gen
+url_code: https://github.com/kostagiolasn/SatConcepts
 url_dataset: ''
 url_poster: ''
 url_project: ''
