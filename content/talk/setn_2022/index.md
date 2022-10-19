@@ -32,9 +32,9 @@ image:
 #   icon_pack: fab
 #   name: Follow
 #   url: https://twitter.com/georgecushen
-url_code: ""
+url_code: https://github.com/kostagiolasn/SatConcepts
 url_pdf: ""
-url_slides: "talk/SETN.pptx"
+url_slides: talk/SETN.pptx
 url_video: ""
 
 # Markdown Slides (optional).
