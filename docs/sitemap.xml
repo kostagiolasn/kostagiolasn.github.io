@@ -2,23 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
-    <lastmod>2022-09-09T11:45:00+00:00</lastmod>
-  </url><url>
-    <loc>/talk/</loc>
-    <lastmod>2022-09-09T11:45:00+00:00</lastmod>
-  </url><url>
-    <loc>/talk/setn_2022/</loc>
-    <lastmod>2022-09-09T11:45:00+00:00</lastmod>
-  </url><url>
     <loc>/publication-type/1/</loc>
     <lastmod>2022-07-26T13:47:45+03:00</lastmod>
+  </url><url>
+    <loc>/publication/diffusion_2026/</loc>
+    <lastmod>2022-07-26T13:47:45+03:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2024-09-09T17:00:00+00:00</lastmod>
   </url><url>
     <loc>/publication_types/</loc>
     <lastmod>2022-07-26T13:52:44+03:00</lastmod>
   </url><url>
     <loc>/publication/</loc>
     <lastmod>2022-07-26T13:52:44+03:00</lastmod>
+  </url><url>
+    <loc>/talk/</loc>
+    <lastmod>2024-09-09T17:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/talk/student_club_2024/</loc>
+    <lastmod>2024-09-09T17:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publication/lpp_2023/</loc>
+    <lastmod>2022-07-26T13:47:45+03:00</lastmod>
+  </url><url>
+    <loc>/talk/setn_2022/</loc>
+    <lastmod>2022-09-09T11:45:00+00:00</lastmod>
   </url><url>
     <loc>/publication/setn_2022/</loc>
     <lastmod>2022-07-26T13:47:45+03:00</lastmod>
@@ -29,7 +38,7 @@
     <loc>/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/talk/ashg_2015/</loc>
+    <loc>/talk/aueb_2018/</loc>
     <lastmod>2019-01-16T12:00:00+00:00</lastmod>
   </url><url>
     <loc>/publication-type/0/</loc>
@@ -64,12 +73,6 @@
   </url><url>
     <loc>/tags/</loc>
     <lastmod>2022-07-26T13:52:44+03:00</lastmod>
-  </url><url>
-    <loc>/privacy/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>/terms/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
   </url><url>
     <loc>/publication-type/3/</loc>
     <lastmod>2022-07-26T13:47:45+03:00</lastmod>

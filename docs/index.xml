@@ -5,12 +5,36 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Nikos Kostagiolas</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2020-2021 Ashis Saha</copyright><lastBuildDate>Fri, 09 Sep 2022 11:45:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2020-2021 Ashis Saha</copyright><lastBuildDate>Mon, 29 Sep 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Nikos Kostagiolas</title>
       <link>/</link>
     </image>
+    
+    <item>
+      <title>Exploring different sequence representations and classification methods for the prediction of nucleosome positioning</title>
+      <link>/publication/diffusion_2026/</link>
+      <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>/publication/diffusion_2026/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unsupervised Discovery of Semantic Concepts in Satellite Imagery with Style-based Wavelet-driven Generative Models</title>
+      <link>/talk/student_club_2024/</link>
+      <pubDate>Mon, 09 Sep 2024 17:00:00 +0000</pubDate>
+      <guid>/talk/student_club_2024/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exploring different sequence representations and classification methods for the prediction of nucleosome positioning</title>
+      <link>/publication/lpp_2023/</link>
+      <pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>/publication/lpp_2023/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Unsupervised Discovery of Semantic Concepts in Satellite Imagery with Style-based Wavelet-driven Generative Models</title>
@@ -158,10 +182,10 @@ $$&lt;/p&gt;
     </item>
     
     <item>
-      <title>Unsupervised Discovery of Semantic Concepts in Satellite Imagery with Style-based Wavelet-driven Generative Models</title>
-      <link>/talk/ashg_2015/</link>
+      <title>Learning Optimization Algorithms with Neural Networks</title>
+      <link>/talk/aueb_2018/</link>
       <pubDate>Wed, 16 Jan 2019 12:00:00 +0000</pubDate>
-      <guid>/talk/ashg_2015/</guid>
+      <guid>/talk/aueb_2018/</guid>
       <description></description>
     </item>
     
@@ -179,24 +203,6 @@ $$&lt;/p&gt;
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       <guid>/publication/athena_demo/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Privacy Policy</title>
-      <link>/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>/privacy/</guid>
-      <description>&lt;p&gt;Add your privacy policy here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Terms</title>
-      <link>/terms/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>/terms/</guid>
-      <description>&lt;p&gt;Add your terms here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
-</description>
     </item>
     
     <item>
